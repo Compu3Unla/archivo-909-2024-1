@@ -62,9 +62,6 @@ nav ul li {
 /***********4-Revistas************/
 #revistas.html {
 display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 1.25rem;
 }
 
 #intro-revistas{
@@ -74,8 +71,6 @@ gap: 1.25rem;
 }
 
 #catalogo-revistas{
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .contenedor-revistas {
