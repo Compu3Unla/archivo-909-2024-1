@@ -51,13 +51,26 @@ p {
 /*nav*/
 nav ul{
     display: flex;
-    padding: 3.125rem 0rem 1.25rem 0rem;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
 }
 nav ul li {
-    flex-shrink: 0;
     stroke-width: 3px;
     stroke: var(--Negro, #000);
 }
+
+/***********INDEX************/
+
+
+
+/***********SUSCRIPCION************/
+
+
+
+/***********EVENTOS************/
+
+
 
 /***********4-Revistas************/
 #revistas.html {
