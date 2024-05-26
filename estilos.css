@@ -5,7 +5,10 @@
     margin: 0px;
     padding: 0px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> dcff962c16a295a9bb006387e4722850d6a9c64e
     list-style: none;
     text-decoration: none;
 }
@@ -53,15 +56,23 @@ p {
 /*nav*/
 nav ul{
     display: flex;
+<<<<<<< HEAD
     padding: 30px;
     justify-content: space-between;
     align-items: center;
 }
 nav ul li {
+=======
+    padding: 3.125rem 0rem 1.25rem 0rem;
+}
+nav ul li {
+    flex-shrink: 0;
+>>>>>>> dcff962c16a295a9bb006387e4722850d6a9c64e
     stroke-width: 3px;
     stroke: var(--Negro, #000);
 }
 
+<<<<<<< HEAD
 /***********INDEX************/
 
 
@@ -74,6 +85,8 @@ nav ul li {
 
 
 
+=======
+>>>>>>> dcff962c16a295a9bb006387e4722850d6a9c64e
 /***********4-Revistas************/
 #revistas.html {
 display: flex;
@@ -93,5 +106,8 @@ display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.14519rem;
+<<<<<<< HEAD
 >>>>>>> rocio
+=======
+>>>>>>> dcff962c16a295a9bb006387e4722850d6a9c64e
 }
