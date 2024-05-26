@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*CSS Document */
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*estilos tipografías */
+h1 {
+
+}
+
+h2 {
+    color: #000;
+    font-family: "Bebas Neue";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h3 { /*paquetes de texto amarillos con fondo negro*/
+    color: var(--Amarillo, var(--AMARILLOFINAL, #F3AB01));
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    color: #000;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;    
+}
+
+.amarrilo-contenedornegro {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3.75rem;
+    background: #000;
+    padding: 1.25rem;
+}
+
+/*nav*/
+nav ul{
+    display: flex;
+    padding: 3.125rem 0rem 1.25rem 0rem;
+}
+nav ul li {
+    flex-shrink: 0;
+    stroke-width: 3px;
+    stroke: var(--Negro, #000);
+}
+
+/***********4-Revistas************/
+#revistas.html {
+display: flex;
+}
+
+#intro-revistas{
+    display: flex;
+    width: 100%;
+    gap: 2.1875rem;
+}
+
+#catalogo-revistas{
+}
+
+.contenedor-revistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.14519rem;
+}
