@@ -48,3 +48,34 @@ p {
     padding: 1.25rem;
 }
 
+/*nav*/
+nav ul{
+    display: flex;
+    padding: 3.125rem 0rem 1.25rem 0rem;
+}
+nav ul li {
+    flex-shrink: 0;
+    stroke-width: 3px;
+    stroke: var(--Negro, #000);
+}
+
+/***********4-Revistas************/
+#revistas.html {
+display: flex;
+}
+
+#intro-revistas{
+    display: flex;
+    width: 100%;
+    gap: 2.1875rem;
+}
+
+#catalogo-revistas{
+}
+
+.contenedor-revistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.14519rem;
+}
