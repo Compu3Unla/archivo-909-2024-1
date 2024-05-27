@@ -10,7 +10,7 @@
 
 /*estilos tipografías */
 h1 {
-
+font-family: bebas neue;
 }
 
 h2 {
@@ -48,18 +48,39 @@ p {
     padding: 1.25rem;
 }
 
+.flechas {
+    background: #F3AB01;        
+    box-shadow: 6px 6px 0px 0px #000;
+    padding: 9.126px 8.589px 10.2px 10.2px;
+    justify-content: center;
+    align-items: center;
+}
+
 /*nav*/
 nav ul{
     display: flex;
-    padding: 3.125rem 0rem 1.25rem 0rem;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
 }
 nav ul li {
-    flex-shrink: 0;
     stroke-width: 3px;
     stroke: var(--Negro, #000);
 }
 
-/***********4-Revistas************/
+/***********INDEX************/
+
+
+
+/***********SUSCRIPCION************/
+
+
+
+/***********EVENTOS************/
+
+
+
+/***********REVISTAS************/
 #revistas.html {
 display: flex;
 }
@@ -70,8 +91,6 @@ display: flex;
     gap: 2.1875rem;
 }
 
-#catalogo-revistas{
-}
 
 .contenedor-revistas {
     display: flex;
