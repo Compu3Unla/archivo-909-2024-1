@@ -10,7 +10,7 @@
 
 /*estilos tipografías */
 h1 {
-font-family: bebas neue;
+    font-family: bebas neue;
 }
 
 h2 {
@@ -21,7 +21,8 @@ h2 {
     font-weight: 400;
 }
 
-h3 { /*paquetes de texto amarillos con fondo negro*/
+h3 {
+    /*paquetes de texto amarillos con fondo negro*/
     color: var(--Amarillo, var(--AMARILLOFINAL, #F3AB01));
     font-family: Lato;
     font-size: 1.5rem;
@@ -35,7 +36,7 @@ p {
     font-family: Lato;
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 700;    
+    font-weight: 700;
 }
 
 .amarrilo-contenedornegro {
@@ -49,7 +50,7 @@ p {
 }
 
 .flechas {
-    background: #F3AB01;        
+    background: #F3AB01;
     box-shadow: 6px 6px 0px 0px #000;
     padding: 9.126px 8.589px 10.2px 10.2px;
     justify-content: center;
@@ -57,12 +58,13 @@ p {
 }
 
 /*nav*/
-nav ul{
+nav ul {
     display: flex;
     padding: 30px;
     justify-content: space-between;
     align-items: center;
 }
+
 nav ul li {
     stroke-width: 3px;
     stroke: var(--Negro, #000);
@@ -81,20 +83,29 @@ nav ul li {
 
 
 /***********REVISTAS************/
-#revistas.html {
-display: flex;
+.page-revistas {
+    background: #FFF1E3;
+    margin-left: 120px;
+    margin-right:120px ;
 }
 
-#intro-revistas{
+#intro-revistas {
     display: flex;
-    width: 100%;
-    gap: 2.1875rem;
+    gap: 142px;
 }
 
-
-.contenedor-revistas {
+.contenedor-revistas { /*revistas por individual*/
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.14519rem;
+}
+
+#contenedor-catálogo { /*revistas en conjunto*/
+    display: flex; /*creo que se resolveria mejor con display grid, aun no termine de entender del todo*/
+    width: 105rem;
+    padding: 2.5rem 0rem;
+    justify-content: center;
+    gap: 6rem 10rem;
+    flex-wrap: wrap;
 }
