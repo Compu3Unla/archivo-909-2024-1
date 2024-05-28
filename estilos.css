@@ -125,7 +125,7 @@ nav ul li {
 .page-revistas {
     background: #FFF1E3;
     margin-left: 120px;
-    margin-right:120px ;
+    margin-right: 120px;
 }
 
 #intro-revistas {
@@ -133,18 +133,53 @@ nav ul li {
     gap: 142px;
 }
 
-.contenedor-revistas { /*revistas por individual*/
+.revista-imagen {
+    position: relative;
+    box-shadow: 13px 13px 0px 0px #000;
+    border: 3px solid #000;
+}
+
+.contenedor-revistas {
+    /*revistas por individual*/
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
+    position: relative;
     gap: 1.14519rem;
 }
 
-#contenedor-catálogo { /*revistas en conjunto*/
-    display: flex; /*creo que se resolveria mejor con display grid, aun no termine de entender del todo*/
+#contenedor-catálogo {
+    /*revistas en conjunto*/
+    display: flex;
+    /*creo que se resolveria mejor con display grid, aun no termine de entender del todo*/
     width: 105rem;
     padding: 2.5rem 0rem;
     justify-content: center;
     gap: 6rem 10rem;
     flex-wrap: wrap;
 }
+
+.overlay-revistas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*fondo transparecia*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+    color: #F3AB01;
+    font-family: "Bebas Neue";
+    font-size: 4rem;
+}
+
+.revista-imagen:hover .overlay-revistas {
+    opacity: 1;
+    box-shadow: 13px 13px 0px 0px #F3AB01;
+}
+
