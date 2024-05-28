@@ -69,16 +69,48 @@ p {
 }
 
 /***********nav***********/
-nav ul {
+header{
+    padding:30px 0px;
+}
+.botonera{
+    width: 100%;
+    border-bottom: 3px solid #000;
+
+}
+.botonera a {
+    color: black;
+    padding: 10px 15px;
+    padding: 0.5rem;
+    transition: all 0.1s ease;
+}
+
+.botonera a.active {
+    font-size: 1.5rem;
+    font-family: Lato;
+    padding: 0.5rem;
+    border-radius: 0.6rem 0.6rem 0rem 0rem;
+}
+
+.botonera a:hover {
+    font-size: 1.1em;
+}
+
+.botonera ul {
     display: flex;
-    padding: 30px;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul li {
+.botonera ul li {
     stroke-width: 3px;
     stroke: var(--Negro, #000);
+    font-family: Lato;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
 }
 
 
@@ -90,12 +122,11 @@ footer {
 
 .contenedor-footer {
     display: flex;
-    background: #FFF;
     border: #000 3px solid;
-    width: 103.1875rem;
+    width: 100%;
     padding: 1.25rem 0rem;
     align-items: center;
-    gap: 25rem;
+    justify-content: space-around;
 }
 
 footer p {
@@ -107,12 +138,12 @@ footer a {
     color: #000;
     font-family: "Bebas Neue";
     font-size: 2rem;
-    
+
 }
 
 /***********fondos***********/
 body {
-    background: #FFF1E3;
+    background-color: #FFF1E3;
     margin-left: 7.5rem;
     margin-right: 7.5rem;
 }
@@ -219,7 +250,7 @@ div#contenedor-revistas-fechayboton {
     /*revistas en conjunto*/
     display: flex;
     /*creo que se resolveria mejor con display grid, aun no termine de entender del todo*/
-    width: 105rem;
+    width: 100%;
     padding: 2.5rem 0rem;
     justify-content: space-evenly;
     gap: 6rem 10rem;
