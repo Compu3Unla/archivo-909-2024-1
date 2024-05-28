@@ -188,8 +188,7 @@
         border: 3px solid #000;
     }
 
-    .contenedor-revistas {
-        /*revistas por individual*/
+    .contenedor-revistas { /*revistas por individual*/
         display: flex;
         position: relative;
         flex-direction: column;
@@ -198,13 +197,12 @@
         gap: 1.14519rem;
     }
 
-    #contenedor-catálogo {
-        /*revistas en conjunto*/
+    #contenedor-catálogo { /*revistas en conjunto*/
         display: flex;
         /*creo que se resolveria mejor con display grid, aun no termine de entender del todo*/
         width: 105rem;
         padding: 2.5rem 0rem;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 6rem 10rem;
         flex-wrap: wrap;
     }
