@@ -9,130 +9,147 @@
 }
 
 /**********estilos-tipografías***********/
-    h1 {
-        font-family: bebas neue;
-    }
+h1 {
+    font-family: bebas neue;
+}
 
-    h2 {
-        color: #000;
-        font-family: "Bebas Neue";
-        font-size: 5rem;
-        font-style: normal;
-        font-weight: 400;
-        text-transform: uppercase;
-    }
+h2 {
+    color: #000;
+    font-family: "Bebas Neue";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
-    h3 {
-        color: #000;   
-        font-family: Lato;
-        font-size: 2.25rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        text-transform: uppercase;
-    }
+h3 {
+    color: #000;
+    font-family: Lato;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
 
-    h4{
-        font-family: "Bebas Neue";
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 400;
-        text-transform: uppercase;
-    }
+h4 {
+    font-family: "Bebas Neue";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
-    h5{
-        color: var(--Amarillo, var(--AMARILLOFINAL, #F3AB01));
-        font-family: Lato;
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        text-transform: uppercase;
-    }
+h5 {
+    color: var(--Amarillo, var(--AMARILLOFINAL, #F3AB01));
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
 
-    h6 {
-        /*instagrams de ferias*/
-        color: black;
-        font-family: Lato;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
+h6 {
+    /*instagrams de ferias*/
+    color: black;
+    font-family: Lato;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
-    p {
-        color: #000;
-        font-family: Lato;
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 700;
-    }
+p {
+    color: #000;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
 
 /***********nav***********/
-    nav ul {
-        display: flex;
-        padding: 30px;
-        justify-content: space-between;
-        align-items: center;
-    }
+nav ul {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    nav ul li {
-        stroke-width: 3px;
-        stroke: var(--Negro, #000);
-    }
+nav ul li {
+    stroke-width: 3px;
+    stroke: var(--Negro, #000);
+}
 
 
 /*footer*/
-    footer {
-        display: flex;
-        background: #FFF;
-        width: 103.1875rem;
-        padding: 1.25rem 0rem;
-        justify-content: center;
-        align-items: center;
-        gap: 25rem;
-    }
+footer {
+    padding: 3.125rem 0rem;
+    color: #000;
+}
+
+.contenedor-footer {
+    display: flex;
+    background: #FFF;
+    border: #000 3px solid;
+    width: 103.1875rem;
+    padding: 1.25rem 0rem;
+    align-items: center;
+    gap: 25rem;
+}
+
+footer p {
+    font-family: Lato;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #000;
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+    
+}
 
 /***********fondos***********/
-    body{
-        background: #FFF1E3;
-        margin-left: 7.5rem;
-        margin-right: 7.5rem;
-    }
+body {
+    background: #FFF1E3;
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+}
 
-    .page-eventos {
-        background-color: #F3AB01;
-    }
+.page-eventos {
+    background-color: #F3AB01;
+}
 
 
- 
+
 /***********class***********/
 
-    .recuadro-blanco-negro {
-        border: #000 3px solid;
-        background: #FFF;
-        box-shadow: 9px 9px 0px 0px;
-        padding: 2rem;    
-    }
-    
-    .amarrilo-contenedornegro {
-        display: flex;
-        width: auto;
-        justify-content: center;
-        align-items: center;
-        border-radius: 3.75rem;
-        background: #000;
-        padding: 1.25rem;
-    }
-    
-    .flechas {
-        background: #F3AB01;
-        box-shadow: 6px 6px 0px 0px #000;
-        padding: 9.126px 8.589px 10.2px 10.2px;
-        justify-content: center;
-        align-items: center;
-    }
-    
+.recuadro-blanco-negro {
+    border: #000 3px solid;
+    background: #FFF;
+    box-shadow: 9px 9px 0px 0px;
+    padding: 2rem;
+}
+
+.amarrilo-contenedornegro {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3.75rem;
+    background: #000;
+    padding: 1.25rem;
+}
+
+.flechas {
+    background: #F3AB01;
+    box-shadow: 6px 6px 0px 0px #000;
+    padding: 9.126px 8.589px 10.2px 10.2px;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /***********INDEX************/
@@ -172,61 +189,62 @@
 
 
 /***********REVISTAS************/
-    #intro-revistas {
-        display: flex;
-        gap: 142px;
+#intro-revistas {
+    display: flex;
+    gap: 142px;
 
-    }
+}
 
-    div#contenedor-revistas-fechayboton {
-        padding: 5rem 0px;
-    }
+div#contenedor-revistas-fechayboton {
+    padding: 5rem 0px;
+}
 
-    .revista-imagen {
-        position: relative;
-        box-shadow: 13px 13px 0px 0px #000;
-        border: 3px solid #000;
-    }
+.revista-imagen {
+    position: relative;
+    box-shadow: 13px 13px 0px 0px #000;
+    border: 3px solid #000;
+}
 
-    .contenedor-revistas { /*revistas por individual*/
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        gap: 1.14519rem;
-    }
+.contenedor-revistas {
+    /*revistas por individual*/
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 1.14519rem;
+}
 
-    #contenedor-catálogo { /*revistas en conjunto*/
-        display: flex;
-        /*creo que se resolveria mejor con display grid, aun no termine de entender del todo*/
-        width: 105rem;
-        padding: 2.5rem 0rem;
-        justify-content: space-evenly;
-        gap: 6rem 10rem;
-        flex-wrap: wrap;
-    }
+#contenedor-catálogo {
+    /*revistas en conjunto*/
+    display: flex;
+    /*creo que se resolveria mejor con display grid, aun no termine de entender del todo*/
+    width: 105rem;
+    padding: 2.5rem 0rem;
+    justify-content: space-evenly;
+    gap: 6rem 10rem;
+    flex-wrap: wrap;
+}
 
-    .overlay-revistas {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        /*fondo transparecia*/
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.3 ease;
-        color: #F3AB01;
-        font-family: "Bebas Neue";
-        font-size: 4rem;
-    }
+.overlay-revistas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*fondo transparecia*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+    color: #F3AB01;
+    font-family: "Bebas Neue";
+    font-size: 4rem;
+}
 
-    .revista-imagen:hover .overlay-revistas {
-        opacity: 1;
-        box-shadow: 13px 13px 0px 0px #F3AB01;
-    }
-
+.revista-imagen:hover .overlay-revistas {
+    opacity: 1;
+    box-shadow: 13px 13px 0px 0px #F3AB01;
+}
