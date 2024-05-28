@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 
-/*estilos tipografías */
+/**********estilos-tipografías***********/
 h1 {
     font-family: bebas neue;
 }
@@ -19,16 +19,35 @@ h2 {
     font-size: 5rem;
     font-style: normal;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 h3 {
-    /*paquetes de texto amarillos con fondo negro*/
+    color: #000;
+    font-family: Lato;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "Bebas Neue";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h5 {
     color: var(--Amarillo, var(--AMARILLOFINAL, #F3AB01));
     font-family: Lato;
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     line-height: normal;
+    text-transform: uppercase;
 }
 
 h6 {
@@ -49,6 +68,104 @@ p {
     font-weight: 700;
 }
 
+/***********nav***********/
+header {
+    padding: 30px 0px;
+}
+
+.botonera {
+    width: 100%;
+    border-bottom: 3px solid #000;
+
+}
+
+.botonera a {
+    color: black;
+    padding: 10px 15px;
+    padding: 0.5rem;
+    transition: all 0.1s ease;
+}
+
+.botonera a.active {
+    font-size: 1.5rem;
+    font-family: Lato;
+    padding: 0.5rem;
+    border-radius: 0.6rem 0.6rem 0rem 0rem;
+}
+
+.botonera a:hover {
+    font-size: 1.1em;
+}
+
+.botonera ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botonera ul li {
+    stroke-width: 3px;
+    stroke: var(--Negro, #000);
+    font-family: Lato;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
+}
+
+
+/*footer*/
+footer {
+    padding: 3.125rem 0rem;
+    color: #000;
+}
+
+.contenedor-footer {
+    display: flex;
+    border: #000 3px solid;
+    background: #FFF;
+    width: 100%;
+    padding: 1.25rem 0rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p {
+    font-family: Lato;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #000;
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+
+}
+
+/***********fondos***********/
+body {
+    background-color: #FFF1E3;
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+}
+
+.page-eventos {
+    background-color: #F3AB01;
+}
+
+
+
+/***********class***********/
+
+.recuadro-blanco-negro {
+    border: #000 3px solid;
+    background: #FFF;
+    box-shadow: 9px 9px 0px 0px;
+    padding: 2rem;
+}
+
 .amarrilo-contenedornegro {
     display: flex;
     width: auto;
@@ -67,23 +184,14 @@ p {
     align-items: center;
 }
 
-/*nav*/
-nav ul {
-    display: flex;
-    padding: 30px;
-    justify-content: space-between;
-    align-items: center;
+.recuadro-crema-negro{
+    border: 3px solid #000;
+
+background: var(--Cremita, #FFF1E3);
+/* SOMBRA-GANDE */
+box-shadow: 13px 13px 0px 0px #000;
 }
 
-nav ul li {
-    stroke-width: 3px;
-    stroke: var(--Negro, #000);
-}
-
-/*colores de body*/
-.page-eventos {
-    background-color: #F3AB01;
-}
 
 /***********INDEX************/
 
@@ -122,29 +230,82 @@ nav ul li {
 
 
 /***********REVISTAS************/
-.page-revistas {
-    background: #FFF1E3;
-    margin-left: 120px;
-    margin-right:120px ;
-}
-
 #intro-revistas {
     display: flex;
     gap: 142px;
+
 }
 
-.contenedor-revistas { /*revistas por individual*/
+div#contenedor-revistas-fechayboton {
+    padding: 5rem 0px;
+}
+
+.revista-imagen {
+    position: relative;
+    box-shadow: 13px 13px 0px 0px #000;
+    border: 3px solid #000;
+}
+
+.contenedor-revistas {
+    /*revistas por individual*/
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
+    position: relative;
     gap: 1.14519rem;
 }
 
-#contenedor-catálogo { /*revistas en conjunto*/
-    display: flex; /*creo que se resolveria mejor con display grid, aun no termine de entender del todo*/
-    width: 105rem;
+#contenedor-catálogo {
+    /*revistas en conjunto*/
+    display: flex;
+    /*creo que se resolveria mejor con display grid, aun no termine de entender del todo*/
+    width: 100%;
     padding: 2.5rem 0rem;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 6rem 10rem;
     flex-wrap: wrap;
+}
+
+.overlay-revistas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*fondo transparecia*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+    color: #F3AB01;
+    font-family: "Bebas Neue";
+    font-size: 4rem;
+}
+
+.revista-imagen:hover .overlay-revistas {
+    opacity: 1;
+    box-shadow: 13px 13px 0px 0px #F3AB01;
+}
+
+/***********VISTA REVISTA 12************/
+.intro-revista12 {
+    display: flex;
+}
+
+.contenedor-edicion-info {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    background: #000;
+    box-shadow: 13px 13px 0px 0px #F3AB01;
+}
+.contenedor-edicion-info h2{
+    color: #F3AB01;
+}
+
+#edicion-numero{
+    display: flex;
 }
