@@ -60,6 +60,19 @@ h6 {
     line-height: normal;
 }
 
+/*nav*/
+nav ul {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    stroke-width: 3px;
+    stroke: var(--Negro, #000);
+}
+
 p {
     color: #000;
     font-family: Lato;
@@ -279,6 +292,12 @@ body {
 
 
 /***********REVISTAS************/
+.page-revistas {
+    background: #FFF1E3;
+    margin-left: 120px;
+    margin-right:120px ;
+}
+
 #intro-revistas {
     display: flex;
     gap: 142px;
