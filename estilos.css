@@ -60,12 +60,130 @@ h6 {
     line-height: normal;
 }
 
+/*nav*/
+nav ul {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    stroke-width: 3px;
+    stroke: var(--Negro, #000);
+}
+
 p {
     color: #000;
     font-family: Lato;
     font-size: 1.5rem;
     font-style: normal;
+    font-weight: 400;
+}
+
+/***********nav***********/
+header {
+    padding: 30px 0px;
+}
+
+.botonera {
+    width: 100%;
+    border-bottom: 3px solid #000;
+
+}
+
+.botonera a {
+    color: black;
+    padding: 10px 15px;
+    padding: 0.5rem;
+    transition: all 0.1s ease;
+}
+
+.botonera a.active {
+    font-size: 1.5rem;
+    font-family: Lato;
+    padding: 0.5rem;
+    border-radius: 0.6rem 0.6rem 0rem 0rem;
+}
+
+.botonera a:hover {
+    font-size: 1.1em;
+}
+
+.botonera ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botonera ul li {
+    stroke-width: 3px;
+    stroke: var(--Negro, #000);
+    font-family: Lato;
+    font-size: 1rem;
+    text-transform: uppercase;
     font-weight: 700;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
+}
+
+
+/*footer*/
+footer {
+    padding: 3.125rem 0rem;
+    color: #000;
+}
+
+.contenedor-footer {
+    display: flex;
+    border: #000 3px solid;
+    background: #FFF;
+    width: 100%;
+    padding: 1.25rem 0rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p {
+    font-family: Lato;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #000;
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+
+}
+
+/***********fondos***********/
+body {
+    background-color: #FFF1E3;
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+}
+
+.page-eventos {
+    background-color: #F3AB01;
+}
+
+
+
+/***********class***********/
+
+.recuadro-blanco-negro {
+    border: #000 3px solid;
+    background: #FFF;
+    box-shadow: 9px 9px 0px 0px;
+    padding: 2rem;
+}
+
+.recuadro-amarillo-negro {
+    border: #000 3px solid;
+    background: #F3AB01;
+    box-shadow: 9px 9px 0px 0px;
+    padding: 2rem;
 }
 
 /***********nav***********/
@@ -187,10 +305,11 @@ body {
 .recuadro-crema-negro{
     border: 3px solid #000;
 
-background: var(--Cremita, #FFF1E3);
-/* SOMBRA-GANDE */
-box-shadow: 13px 13px 0px 0px #000;
+    background: var(--Cremita, #FFF1E3);
+    /* SOMBRA-GRANDE */
+    box-shadow: 13px 13px 0px 0px #000;
 }
+
 
 
 /***********INDEX************/
@@ -198,8 +317,51 @@ box-shadow: 13px 13px 0px 0px #000;
 
 
 /***********SUSCRIPCION************/
+#monederos {
+    background-image: url(img/monederos.png);
+    background-size:contain;
+}
 
+.se-parte {
+    display: flex;
+}
 
+.contenedor-contacto {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    background: #000;
+    box-shadow: 13px 13px 0px 0px #F3AB01;
+}
+
+.contenedor-contacto h3 {
+    color:#FFF1E3;
+    font-family: "Bebas Neue";
+    font-size: 3.21763rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101%; /* 3.24981rem */
+    text-transform: uppercase;
+}
+
+.contenedor-contacto p {
+    color: var(--Cremita, #FFF1E3);
+    font-family: "Lato";
+    font-size: 1.34069rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 132%; /* 1.76969rem */
+    text-transform: uppercase;
+}
+
+.boton-amarillo-grande {
+    display: flex;
+    width: 57.5rem;
+    height: 3.0625rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
 
 /***********EVENTOS************/
 .contenedor-h3 {
@@ -228,6 +390,19 @@ box-shadow: 13px 13px 0px 0px #000;
     gap: 3rem;
 }
 
+#ferias {
+    padding-left: 10rem;
+    padding-top: 5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.contenedor-main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 
 /***********REVISTAS************/
 #intro-revistas {
@@ -239,6 +414,7 @@ box-shadow: 13px 13px 0px 0px #000;
 div#contenedor-revistas-fechayboton {
     padding: 5rem 0px;
 }
+
 
 .revista-imagen {
     position: relative;
