@@ -26,7 +26,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="suscripcion.html">Suscribite</a></li>
                 <li><a href="entretenimiento.html">Eventos</a></li>
-                <li><a href="revistas.html">Revistas</a></li>
+                <li><a href="revistas.html" class="active">Revistas</a></li>
             </ul>
         </nav>
     </header>
@@ -35,80 +35,131 @@
         <!------------------intro------------------>
         <section id="intro-revistas">
             <article>
-                <div id="contenedor-titulos">
+                <div id="contenedor-titulos" class="recuadro-blanco-negro">
                     <h2>NUESTRAS REVISTAS</h2>
-                    <p>¿Listo para convertirte en una mente moderna?</p>
+                    <h3>¿Listo para convertirte en una mente moderna?</h3>
                 </div>
                 <div id="contenedor-revistas-fechayboton">
                     <div class="amarrilo-contenedornegro">
-                        <h3>PRÓXIMA EDICIÓN ❋ 03 DE JULIO </h3>
+                        <h5>PRÓXIMA EDICIÓN ❋ 03 DE JULIO </h5>
                     </div>
-                    <button class="flechas"><img src="/img/boton-signo-exclamacion.svg" alt="signo de boton-signo-exclamacion" width="27px" height="64px"></button>
+                    <button class="flechas"><img src="img/boton-signo-exclamacion.svg"
+                            alt="signo de boton-signo-exclamacion" width="27px" height="64px"></button>
                 </div>
             </article>
             <img src="img/revista-img.png" alt="imagen de revistas" width="824px" height="527px">
         </section>
         <!------------------catálogo revistas------------------>
         <section id="contenedor-catálogo">
+            
             <article id="revista12" class="contenedor-revistas">
                 <!--acá dudo si está de más el "id" para cada revista-->
                 <img src="img/revistas-12.png" alt="numero12" width="80px" height="80px">
-                <img src="img/revistas-edicion-12.png" alt="portada de revista n°12" width="244.08px" height="336.41px">
+                <a href="vista-revista.html"> 
+                    <div class="revista-imagen">
+                    <img src="img/revistas-edicion-12.png" alt="portada de revista n°12" width="244px" height="334px">
+                    <div class="overlay-revistas">COMPRAR</div>
+                    </div>
+                </a>
             </article>
             <article id="revista11" class="contenedor-revistas">
                 <img src="img/revistas-11.png" alt="numero11" width="80px" height="80px">
-                <img src="img/revistas-edicion-11.png" alt="portada de revista n°11" width="244.08px" height="336.41px">
+
+                <div class="revista-imagen">
+                    <img src="img/revistas-edicion-11.png" alt="portada de revista n°11" width="244px" height="334px">
+                    <div class="overlay-revistas">COMPRAR</div>
+                </div>
             </article>
-            <article id="revistas-10" class="contenedor-revistas">
+            <article id="revista10" class="contenedor-revistas">
                 <img src="img/revistas-10.png" alt="numero10" width="80px" height="80px">
-                <img src="img/revistas-edicion-10.png" alt="portada de revista n°10" width="244.08px" height="336.41px">
+
+                <div class="revista-imagen">
+                    <img src="img/revistas-edicion-10.png" alt="portada de revista n°10" width="244px" height="334px">
+                    <div class="overlay-revistas">COMPRAR</div>
+                </div>
             </article>
             <article id="revista9" class="contenedor-revistas">
                 <img src="img/revistas-9.png" alt="numero9" width="80px" height="80px">
-                <img src="img/revistas-edicion-9.png" alt="portada de revista n°9" width="244.08px" height="336.41px">
+
+                <div class="revista-imagen">
+                    <img src="img/revistas-edicion-9.png" alt="portada de revista n°9" width="244px" height="334px">
+                    <div class="overlay-revistas">COMPRAR</div>
+                </div>
             </article>
-            <article id="revista-8" class="contenedor-revistas">
-                <img src="img/revistas-8.png" alt="numero8" width="80px" height="80px">
-                <img src="img/revistas-edicion-8.png" alt="portada de revista n°8" width="244.08px" height="336.41px">
+            <article id="revista8" class="contenedor-revistas">
+                <img src="img/revistas-8.png" alt="numero10" width="80px" height="80px">
+
+                <div class="revista-imagen">
+                    <img src="img/revistas-edicion-8.png" alt="portada de revista n°8" width="244px" height="334px">
+                    <div class="overlay-revistas">COMPRAR</div>
+                </div>
             </article>
-            <article id="revista-7" class="contenedor-revistas">
-                <img src="img/revistas-7.png" alt="numero12" width="80px" height="80px">
-                <img src="img/revistas-edicion-7.jpg" alt="portada de revista n°7" width="244.08px" height="336.41px">
+            <article id="revistas-7" class="contenedor-revistas">
+                <img src="img/revistas-7.png" alt="numero7" width="80px" height="80px">
+
+                <div class="revista-imagen">
+                    <img src="img/revistas-edicion-7.png" alt="portada de revista n°7" width="244px" height="334px">
+                    <div class="overlay-revistas">COMPRAR</div>
+                </div>
             </article>
-            <article id="revista-6" class="contenedor-revistas">
-                <img src="img/revistas-6.png" alt="numero6" width="80px" height="80px">
-                <img src="img/revistas-edicion-6.png" alt="portada de revista n°6" width="244.08px" height="336.41px">
+            <article id="revistas-6" class="contenedor-revistas">
+                <img src="img/revistas-6.png" alt="numero10" width="80px" height="80px">
+
+                <div class="revista-imagen">
+                    <img src="img/revistas-edicion-6.png" alt="portada de revista n°6" width="244px" height="334px">
+                    <div class="overlay-revistas">COMPRAR</div>
+                </div>
             </article>
-            <article id="revista5" class="contenedor-revistas">
+            <article id="revistas-5" class="contenedor-revistas">
                 <img src="img/revistas-5.png" alt="numero5" width="80px" height="80px">
-                <img src="img/revistas-edicion-5.png" alt="portada de revista n°5" width="244.08px" height="336.41px">
+
+                <div class="revista-imagen">
+                    <img src="img/revistas-edicion-5.png" alt="portada de revista n°5" width="244px" height="334px">
+                    <div class="overlay-revistas">COMPRAR</div>
+                </div>
             </article>
-            <article id="revista-4" class="contenedor-revistas">
+            <article id="revista4" class="contenedor-revistas">
                 <img src="img/revistas-4.png" alt="numero4" width="80px" height="80px">
-                <img src="img/revistas-edicion-4.png" alt="portada de revista n°4" width="244.08px" height="336.41px">
+
+                <div class="revista-imagen">
+                    <img src="img/revistas-edicion-4.png" alt="portada de revista n°4" width="244px" height="334px">
+                    <div class="overlay-revistas">COMPRAR</div>
+                </div>
             </article>
-            <article id="revista-3" class="contenedor-revistas">
+            <article id="revistas-3" class="contenedor-revistas">
                 <img src="img/revistas-3.png" alt="numero3" width="80px" height="80px">
-                <img src="img/revistas-edicion-3.jpg" alt="portada de revista n°3" width="244.08px" height="336.41px">
+
+                <div class="revista-imagen">
+                    <img src="img/revistas-edicion-3.png" alt="portada de revista n°3" width="244px" height="334px">
+                    <div class="overlay-revistas">COMPRAR</div>
+                </div>
             </article>
-            <article id="revista-2" class="contenedor-revistas">
+            <article id="revista2" class="contenedor-revistas">
                 <img src="img/revistas-2.png" alt="numero2" width="80px" height="80px">
-                <img src="img/revistas-edicion-2.png" alt="portada de revista n°2" width="244.08px" height="336.41px">
+
+                <div class="revista-imagen">
+                    <img src="img/revistas-edicion-2.png" alt="portada de revista n°2" width="244px" height="334px">
+                    <div class="overlay-revistas">COMPRAR</div>
+                </div>
             </article>
             <article id="revista1" class="contenedor-revistas">
-                <img src="img/revistas-1.png" alt="numero1" width="80px" height="80px">
-                <img src="img/revistas-edicion-1.jpg" alt="portada de revista n°1" width="244.08px" height="336.41px">
-            </article>
+                <img src="img/revistas-1.png" alt="numero10" width="80px" height="80px">
 
+                <div class="revista-imagen">
+                    <img src="img/revistas-edicion-1.jpg" alt="portada de revista n°1" width="244px" height="334px">
+                    <div class="overlay-revistas">COMPRAR</div>
+                </div>
+            </article>
         </section>
+        <a href="#top" class="flechas"><img src="img/flecha-arriba.svg" alt="Volver arriba" width="21px" height="32px"></a><!--flecha de volver arriba-->
     </main>
-    <a href="#top" class="flechas"><img src="img/flecha-arriba.svg" alt="Volver arriba" width="21px"
-            height="32px"></a><!--flecha de volver arriba-->
     <!------------------fin main------------------>
     <footer>
-        <img src="/img/logo-archivo909.svg" alt="imagen del logo" width="181px" height="30px">
-        <p>Copyright© 2024. Todos los derechos reservados.</p>
-        <p>CONTACTO</p>
+        <div class="contenedor-footer">
+            <img src="img/logo-archivo909.svg" alt="imagen del logo" width="181px" height="30px">
+            <p>Copyright© 2024. Todos los derechos reservados.</p>
+            <a>CONTACTO</a>
+        </div>
     </footer>
 </body>
 
