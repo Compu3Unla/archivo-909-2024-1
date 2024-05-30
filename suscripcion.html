@@ -1,37 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link href="estilos.css" rel="stylesheet" type="text/css">
-        <link rel="icon" type="image/svg+xml" href="favicon.svg">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        <title>Archivo909</title>
-    </head>
-    <body>
-        <header>
-            <nav class="botonera">
-                <ul>
-                    <li><img src="img/logo-archivo909.svg" alt="logo-archivo909" width="173px" height="28px"></li>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="suscripcion.html">Suscribite</a></li>
-                    <li><a href="entretenimiento.html">Eventos</a></li>
-                    <li><a href="revistas.html">Revistas</a></li>
-                </ul>
-        </header>
 
-        <main>
+<head>
+    <meta charset="UTF-8">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Archivo909</title>
+</head>
 
-        </main>
+<body>
+    <header>
+        <nav class="botonera">
+            <ul>
+                <li><img src="img/logo-archivo909.svg" alt="logo-archivo909" width="173px" height="28px"></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="suscripcion.html" class="active">Suscribite</a></li>
+                <li><a href="entretenimiento.html">Eventos</a></li>
+                <li><a href="revistas.html">Revistas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+        <section>
+            <div>
+                <h2>Recibí la revista mensualmente</h2>
+            </div>
+            <article id="monederos">
+                <div class="recuadro-crema-negro">
+
+                <p>Sé parte de</p>
+                <h2>El club de la mesa redonda</h2>
+            </div>
+            <div>
+                <p>Con tu suscripción no solo recibís la revista mensualmente, sino que también formas parte del CLUB DE LA MESA REDONDA de archivo909. 
+                Tendrás la oportunidad de participar en encuestas que influyen en el contenido que creamos, aumentando tus posibilidades de acceder a contenido que te interesa.
+                Además, recibirás recomendaciones personalizadas de archivo909 y tendrás prioridad en eventos y lanzamientos especiales. ¡Únete a nosotros y disfruta de una experiencia única y personalizada cada mes!</p>
+                <a class="boton-amarillo-grande">Ya soy miembro</a>
+            </div>
+        </article>
+        <section class="contacto">
+            <div>
+                <article class="contenedor-contacto">
+                    <h3>¿Queres hablar con nosotros?</h3>
+                    <p>Completá los datos y nuestro equipo se contactará con vos.</p>
+                </article>
+                <img src="img/compu-suscripcion.png">
+            </div>
+            <div class="recuadro-amarillo-negro">
+                <form method="post" action="mailto=alzumartinagmail.com subject=Email enviado desde el formulario" target="_self" enctype="text/plain">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+
+                    <input type="email" name="email" id="Nombre" placeholder="Email">
+
+                    <input type="submit" value="Enviar" formenctype="text/plain">
+                </form>
+            </div>
+        </section>
+        <a href="#top" class="flechas"><img src="img/flecha-arriba.svg" alt="Volver arriba" width="21px" height="32px"></a>
+    </main>
 
         <footer>
-        <img src="/img/logo-archivo909.svg" alt="imagen del logo">
-        <p>Copyright© 2024. Todos los derechos reservados.</p>
-        <p>CONTACTO</p>
+          <img src="/img/logo-archivo909.svg" alt="imagen del logo" width="181px" height="30px">
+          <p>Copyright© 2024. Todos los derechos reservados.</p>
+          <p>CONTACTO</p>
         </footer>
     </body>
+
 </html>
