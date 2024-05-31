@@ -9,7 +9,6 @@
     text-decoration: none;
 }
 
-
 /**********estilos-tipografías***********/
 h1 {
     font-family: bebas neue;
@@ -94,60 +93,6 @@ p {
 }
 
 
-/***********nav***********/
-header {
-    padding: 30px 0px;
-}
-
-
-.botonera {
-    width: 100%;
-    border-bottom: 3px solid #000;
-
-
-}
-
-
-.botonera a {
-    color: black;
-    padding: 10px 15px;
-    padding: 0.5rem;
-    transition: all 0.1s ease;
-}
-
-.botonera a.active { /*boton mas grande estando en el html clickeado*/
-    font-size: 1.5rem;
-    font-family: Lato;
-    padding: 0.5rem;
-    border-radius: 0.6rem 0.6rem 0rem 0rem;
-}
-
-
-
-
-.botonera ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.botonera ul li {
-    stroke-width: 3px;
-    stroke: var(--Negro, #000);
-    font-family: Lato;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-top: 3px solid #000;
-    border-right: 3px solid #000;
-    border-left: 3px solid #000;
-    border-radius: 10px 10px 0px 0px;
-}
-
-
-
-
 /*footer*/
 footer {
     padding: 3.125rem 0rem;
@@ -181,42 +126,6 @@ footer a {
 }
 
 
-/***********fondos***********/
-body {
-    background-color: #FFF1E3;
-    margin-left: 7.5rem;
-    margin-right: 7.5rem;
-}
-
-
-.page-eventos {
-    background-color: #F3AB01;
-}
-
-
-
-
-
-
-/***********class***********/
-
-
-.recuadro-blanco-negro {
-    border: #000 3px solid;
-    background: #FFF;
-    box-shadow: 9px 9px 0px 0px;
-    padding: 2rem;
-}
-
-
-.recuadro-amarillo-negro {
-    border: #000 3px solid;
-    background: #F3AB01;
-    box-shadow: 9px 9px 0px 0px;
-    padding: 2rem;
-}
-
-
 /***********nav***********/
 header {
     padding: 30px 0px;
@@ -239,7 +148,8 @@ header {
 }
 
 
-.botonera a.active { /*boton mas grande estando en el html clickeado*/
+.botonera a.active {
+    /*boton mas grande estando en el html clickeado*/
     font-size: 1.5rem;
     font-family: Lato;
     padding: 0.5rem;
@@ -272,41 +182,6 @@ header {
 }
 
 
-
-
-/*footer*/
-footer {
-    padding: 3.125rem 0rem;
-    color: #000;
-}
-
-
-.contenedor-footer {
-    display: flex;
-    border: #000 3px solid;
-    background: #FFF;
-    width: 100%;
-    padding: 1.25rem 0rem;
-    align-items: center;
-    justify-content: space-around;
-}
-
-
-footer p {
-    font-family: Lato;
-    font-size: 1rem;
-}
-
-
-footer a {
-    color: #000;
-    font-family: "Bebas Neue";
-    font-size: 2rem;
-
-
-}
-
-
 /***********fondos***********/
 body {
     background-color: #FFF1E3;
@@ -320,12 +195,11 @@ body {
 }
 
 
-
-
-
-
 /***********class***********/
-
+button {
+    border: none;
+    background: none;
+}
 
 .recuadro-blanco-negro {
     border: #000 3px solid;
@@ -349,16 +223,93 @@ body {
 .flechas {
     background: #F3AB01;
     box-shadow: 6px 6px 0px 0px #000;
-    padding: 9.126px 8.589px 10.2px 10.2px;
-    justify-content: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.flechas:hover {
+    background: #FFF1E3;
+    box-shadow: 6px 6px 0px 0px #F3AB01;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+a #flecha-volver {
+    padding: 30px;
+}
+
+.recuadro-crema-negro {
+    border: 3px solid #000;
+    background: var(--Cremita, #FFF1E3);
+    box-shadow: 13px 13px 0px 0px #000;
+}
+
+.index .recuadro-crema-negro:hover {
+    background-color: #FFF;
+}
+
+.boton-amarillo-chico {
+    background-color: #F3AB01;
+    border: 3px solid #000;
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    color: #000;
+    border-radius: 20px;
+    display: flex;
     align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    max-width: 40%;
+    box-shadow: 8px 8px 0px 0px #000;
+}
+
+.boton-negro {
+    background-color: #000;
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    color: #F3AB01;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    max-width: 40%;
+    box-shadow: 8px 8px 0px 0px #F3AB01;
+}
+
+.boton-amarillo-grande {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2.9375rem;
+    border-radius: 0.5625rem;
+    border: 3px solid #000;
+    background: #F3AB01;
+    box-shadow: 9px 9px 0px 0px #000;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 2.5rem;
+}
+
+.boton-amarillo-grande:hover {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2.9375rem;
+    border-radius: 0.5625rem;
+    border: 3px solid #000;
+    background: #000;
+    box-shadow: 9px 9px 0px 0px #F3AB01;
+    color: #F3AB01;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 2.5rem;
 }
 
 
-.recuadro-crema-negro{
+
+.recuadro-amarillo-negro {
+    background-color: #F3AB01;
     border: 3px solid #000;
-    background: var(--Cremita, #FFF1E3);
-    /* SOMBRA-GRANDE */
     box-shadow: 13px 13px 0px 0px #000;
     display: flex;
     flex-direction: row;
@@ -367,20 +318,8 @@ body {
     padding: 50px;
 }
 
-
-.recuadro-crema-negro:hover {
-    background-color: #FFF;
-}
-
-
-
-
-
-
 /***********INDEX************/
-
-
-main {
+.index main {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -413,39 +352,7 @@ main {
     padding: 10px;
 }
 
-
-.boton-amarillo-chico {
-    background-color: #F3AB01;
-    border: 3px solid #000;
-    font-family: "Bebas Neue";
-    font-size: 40px;
-    color: #000;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 15px;
-    max-width: 40%;
-    box-shadow: 8px 8px 0px 0px #000;
-}
-
-
-.boton-negro  {
-    background-color: #000;
-    font-family: "Bebas Neue";
-    font-size: 40px;
-    color: #F3AB01;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 15px;
-    max-width: 40%;
-    box-shadow: 8px 8px 0px 0px #F3AB01;
-}
-
-
-.preguntas-frecuentes  {
+.preguntas-frecuentes {
     display: flex;
 }
 
@@ -480,17 +387,31 @@ main {
     gap: 40px;
 }
 
+.mesa-redonda {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px;
+}
 
 .clubychica {
     display: flex;
     gap: 40px;
 }
 
+.index .recuadro-crema-negro {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px;
+}
 
 /***********SUSCRIPCION************/
 #monederos {
     background-image: url(img/monederos.png);
-    background-size:contain;
+    background-size: contain;
 }
 
 
@@ -509,12 +430,13 @@ main {
 
 
 .contenedor-contacto h3 {
-    color:#FFF1E3;
+    color: #FFF1E3;
     font-family: "Bebas Neue";
     font-size: 3.21763rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 101%; /* 3.24981rem */
+    line-height: 101%;
+    /* 3.24981rem */
     text-transform: uppercase;
 }
 
@@ -525,19 +447,12 @@ main {
     font-size: 1.34069rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 132%; /* 1.76969rem */
+    line-height: 132%;
+    /* 1.76969rem */
     text-transform: uppercase;
 }
 
 
-.boton-amarillo-grande {
-    display: flex;
-    width: 57.5rem;
-    height: 3.0625rem;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
 
 
 /***********EVENTOS************/
@@ -546,15 +461,6 @@ main {
     width: 1119px;
     height: 58px;
 }
-
-
-.fondocrema-negro {
-    width: 1121px;
-    height: 300px;
-    border: 3px solid black;
-    display: flex;
-}
-
 
 #ferias {
     padding-left: 10rem;
@@ -592,24 +498,51 @@ main {
 #intro-revistas {
     display: flex;
     gap: 142px;
-
-
 }
-
 
 div#contenedor-revistas-fechayboton {
-    padding: 5rem 0px;
+    padding: 30px 0px;
+}
+
+/*cartel hover revistas*/
+#contenedor-efecto-cartel {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+#boton-signo-exclamacion {
+    cursor: pointer;
+    background-color: #F3AB01;
+    box-shadow: 9px 9px 0px 0px #000;
+    padding: 10px;
 }
 
 
 
+#cartel-exclamacion-hover {
+    background-color: #F3AB01;
+    box-shadow: 9px 9px 0px 0px #000;
+    width: 100%;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
 
+
+#contenedor-efecto-cartel:hover #cartel-exclamacion-hover {
+    opacity: 1;
+}
+
+/*seccion revistas*/
 .revista-imagen {
     position: relative;
     box-shadow: 13px 13px 0px 0px #000;
     border: 3px solid #000;
 }
-
 
 .contenedor-revistas {
     /*revistas por individual*/
@@ -619,8 +552,8 @@ div#contenedor-revistas-fechayboton {
     align-items: center;
     position: relative;
     gap: 1.14519rem;
+    cursor: pointer;
 }
-
 
 #contenedor-catálogo {
     /*revistas en conjunto*/
@@ -632,7 +565,6 @@ div#contenedor-revistas-fechayboton {
     gap: 6rem 10rem;
     flex-wrap: wrap;
 }
-
 
 .overlay-revistas {
     position: absolute;
@@ -652,7 +584,6 @@ div#contenedor-revistas-fechayboton {
     font-size: 4rem;
 }
 
-
 .revista-imagen:hover .overlay-revistas {
     opacity: 1;
     box-shadow: 13px 13px 0px 0px #F3AB01;
@@ -660,23 +591,85 @@ div#contenedor-revistas-fechayboton {
 
 
 /***********VISTA REVISTA 12************/
-.intro-revista12 {
+/*intro*/
+
+
+#intro-revista {
+    display: flex;
+    gap: 20px;
+    padding: 30px 0px;
+}
+
+#fotos-edicion {
     display: flex;
 }
 
+#fotos-edicion img {
+    border: 3px solid #000;
+}
+
+#fotos-edicion div {
+    display: flex;
+    flex-direction: column;
+}
 
 .contenedor-edicion-info {
     display: flex;
-    padding: 2rem;
+    padding: 30px;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
     background: #000;
     box-shadow: 13px 13px 0px 0px #F3AB01;
 }
-.contenedor-edicion-info h2{
+
+.contenedor-edicion-info h2 {
     color: #F3AB01;
+    font-size: 8rem;
 }
 
-
-#edicion-numero{
+#edicion-numero {
     display: flex;
+    align-items: center;
+}
+
+#tabla h3 {
+    padding: 20px;
+    gap: 20px;
+}
+
+/*carrusel*/
+#carrusel {
+    overflow: hidden;
+    position: relative;
+    padding: 50px 50px;
+}
+
+#contenidos-carrusel {
+    padding: 0px 30px;
+    display: flex;
+    gap: 60px;
+    cursor: pointer;
+}
+
+.contenedor-revistas-carrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#flechas-carrusel {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.boton-sinbordes {
+    border: none;
+    background: none;
 }
