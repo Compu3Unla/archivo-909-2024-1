@@ -458,19 +458,38 @@ a #flecha-volver {
 
 
 /***********EVENTOS************/
+.contenedor-main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 .contenedor-h3 {
     background-color: #000;
     width: 1119px;
     height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.sub-eventos {
+    color: #FFF1E3;
+    font-family: Lato;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
 
 #ferias {
-    padding-left: 10rem;
-    padding-top: 5rem;
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
+    padding-top: 3em;
 }
-
 
 .contenedor-main {
     display: flex;
@@ -478,21 +497,65 @@ a #flecha-volver {
     gap: 3rem;
 }
 
-
-#ferias {
-    padding-left: 10rem;
-    padding-top: 5rem;
-    display: flex;
-    gap: 1rem;
+.recuadro-crema-negro-eventos {
+    border: 3px solid #000;
+    background: var(--Cremita, #FFF1E3);
+    box-shadow: 13px 13px 0px 0px #000;
+    padding: 30px;
 }
 
-
-.contenedor-main {
+#contenedores-ferias {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 3em;
 }
 
+.titulo-feria{
+    border: 3px solid #000;
+    box-shadow: 13px 13px 0px 0px #000;
+    width: fit-content;
+    padding: 11px;
+}
+
+.foto-evento {
+    border: 3px solid black;
+    margin-bottom: 1em;
+}
+
+.insta-feria {
+    display: flex;
+    gap: 1em;
+}
+
+.info-feria{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sobre-feria{
+    display: flex;
+    width: 75%;
+    gap: 3em;
+}
+
+.paquetes-chicos{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 71%;
+}
+.subs-info{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contenedor-info-feria{
+    display: flex;
+    padding-top: 3em;
+    gap: 3em;
+}
 
 
 
