@@ -115,8 +115,7 @@ header {
     transition: all 0.1s ease;
 }
 
-
-.botonera a.active {
+.botonera a.active { /*boton mas grande estando en el html clickeado*/
     font-size: 1.5rem;
     font-family: Lato;
     padding: 0.5rem;
@@ -124,9 +123,6 @@ header {
 }
 
 
-.botonera a:hover {
-    font-size: 1.1em;
-}
 
 
 .botonera ul {
@@ -243,7 +239,7 @@ header {
 }
 
 
-.botonera a.active {
+.botonera a.active { /*boton mas grande estando en el html clickeado*/
     font-size: 1.5rem;
     font-family: Lato;
     padding: 0.5rem;
