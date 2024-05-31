@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /*CSS Document */
 * {
     margin: 0px;
@@ -8,10 +9,12 @@
     text-decoration: none;
 }
 
+
 /**********estilos-tipografías***********/
 h1 {
     font-family: bebas neue;
 }
+
 
 h2 {
     color: #000;
@@ -22,6 +25,7 @@ h2 {
     text-transform: uppercase;
     line-height: 1em;
 }
+
 
 h3 {
     color: #000;
@@ -34,6 +38,7 @@ h3 {
     line-height: 1em;
 }
 
+
 h4 {
     font-family: "Bebas Neue";
     font-size: 3rem;
@@ -41,6 +46,7 @@ h4 {
     font-weight: 400;
     text-transform: uppercase;
 }
+
 
 h5 {
     color: var(--Amarillo, var(--AMARILLOFINAL, #F3AB01));
@@ -52,6 +58,7 @@ h5 {
     text-transform: uppercase;
 }
 
+
 h6 {
     /*instagrams de ferias*/
     color: black;
@@ -62,6 +69,7 @@ h6 {
     line-height: normal;
 }
 
+
 /*nav*/
 nav ul {
     display: flex;
@@ -70,10 +78,12 @@ nav ul {
     align-items: center;
 }
 
+
 nav ul li {
     stroke-width: 3px;
     stroke: var(--Negro, #000);
 }
+
 
 p {
     color: #000;
@@ -83,16 +93,20 @@ p {
     font-weight: 400;
 }
 
+
 /***********nav***********/
 header {
     padding: 30px 0px;
 }
 
+
 .botonera {
     width: 100%;
     border-bottom: 3px solid #000;
 
+
 }
+
 
 .botonera a {
     color: black;
@@ -101,6 +115,7 @@ header {
     transition: all 0.1s ease;
 }
 
+
 .botonera a.active {
     font-size: 1.5rem;
     font-family: Lato;
@@ -108,15 +123,18 @@ header {
     border-radius: 0.6rem 0.6rem 0rem 0rem;
 }
 
+
 .botonera a:hover {
     font-size: 1.1em;
 }
+
 
 .botonera ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .botonera ul li {
     stroke-width: 3px;
@@ -132,11 +150,14 @@ header {
 }
 
 
+
+
 /*footer*/
 footer {
     padding: 3.125rem 0rem;
     color: #000;
 }
+
 
 .contenedor-footer {
     display: flex;
@@ -148,17 +169,21 @@ footer {
     justify-content: space-around;
 }
 
+
 footer p {
     font-family: Lato;
     font-size: 1rem;
 }
+
 
 footer a {
     color: #000;
     font-family: "Bebas Neue";
     font-size: 2rem;
 
+
 }
+
 
 /***********fondos***********/
 body {
@@ -167,13 +192,18 @@ body {
     margin-right: 7.5rem;
 }
 
+
 .page-eventos {
     background-color: #F3AB01;
 }
 
 
 
+
+
+
 /***********class***********/
+
 
 .recuadro-blanco-negro {
     border: #000 3px solid;
@@ -182,6 +212,7 @@ body {
     padding: 2rem;
 }
 
+
 .recuadro-amarillo-negro {
     border: #000 3px solid;
     background: #F3AB01;
@@ -189,16 +220,20 @@ body {
     padding: 2rem;
 }
 
+
 /***********nav***********/
 header {
     padding: 30px 0px;
 }
 
+
 .botonera {
     width: 100%;
     border-bottom: 3px solid #000;
 
+
 }
+
 
 .botonera a {
     color: black;
@@ -207,6 +242,7 @@ header {
     transition: all 0.1s ease;
 }
 
+
 .botonera a.active {
     font-size: 1.5rem;
     font-family: Lato;
@@ -214,15 +250,18 @@ header {
     border-radius: 0.6rem 0.6rem 0rem 0rem;
 }
 
+
 .botonera a:hover {
     font-size: 1.1em;
 }
+
 
 .botonera ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .botonera ul li {
     stroke-width: 3px;
@@ -237,11 +276,14 @@ header {
 }
 
 
+
+
 /*footer*/
 footer {
     padding: 3.125rem 0rem;
     color: #000;
 }
+
 
 .contenedor-footer {
     display: flex;
@@ -253,17 +295,21 @@ footer {
     justify-content: space-around;
 }
 
+
 footer p {
     font-family: Lato;
     font-size: 1rem;
 }
+
 
 footer a {
     color: #000;
     font-family: "Bebas Neue";
     font-size: 2rem;
 
+
 }
+
 
 /***********fondos***********/
 body {
@@ -272,13 +318,18 @@ body {
     margin-right: 7.5rem;
 }
 
+
 .page-eventos {
     background-color: #F3AB01;
 }
 
 
 
+
+
+
 /***********class***********/
+
 
 .recuadro-blanco-negro {
     border: #000 3px solid;
@@ -286,6 +337,7 @@ body {
     box-shadow: 9px 9px 0px 0px;
     padding: 2rem;
 }
+
 
 .amarrilo-contenedornegro {
     display: flex;
@@ -297,6 +349,7 @@ body {
     padding: 1.25rem;
 }
 
+
 .flechas {
     background: #F3AB01;
     box-shadow: 6px 6px 0px 0px #000;
@@ -304,6 +357,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 
 .recuadro-crema-negro{
     border: 3px solid #000;
@@ -317,13 +371,18 @@ body {
     padding: 50px;
 }
 
+
 .recuadro-crema-negro:hover {
     background-color: #FFF;
 }
 
 
 
+
+
+
 /***********INDEX************/
+
 
 main {
     display: flex;
@@ -331,10 +390,12 @@ main {
     gap: 40px;
 }
 
+
 .inicioyedicion {
     display: flex;
     gap: 40px;
 }
+
 
 .linea-punteada {
     border-style: dashed;
@@ -345,6 +406,7 @@ main {
     max-width: 30%;
 }
 
+
 .banner h3 {
     background-color: #F3AB01;
     width: 100%;
@@ -354,6 +416,7 @@ main {
     gap: 40px;
     padding: 10px;
 }
+
 
 .boton-amarillo-chico {
     background-color: #F3AB01;
@@ -370,6 +433,7 @@ main {
     box-shadow: 8px 8px 0px 0px #000;
 }
 
+
 .boton-negro  {
     background-color: #000;
     font-family: "Bebas Neue";
@@ -384,15 +448,18 @@ main {
     box-shadow: 8px 8px 0px 0px #F3AB01;
 }
 
+
 .preguntas-frecuentes  {
     display: flex;
 }
+
 
 .preguntas-frecuentes .recuadro-amarillo-negro {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
+
 
 .preguntas {
     border: 3px solid #000;
@@ -402,11 +469,13 @@ main {
     gap: 30px;
 }
 
+
 .flecha-abajo {
     background-color: #F3AB01;
     border: 3px solid #000;
     padding: 5px;
 }
+
 
 .preguntasyrevistas {
     display: flex;
@@ -415,10 +484,12 @@ main {
     gap: 40px;
 }
 
+
 .clubychica {
     display: flex;
     gap: 40px;
 }
+
 
 /***********SUSCRIPCION************/
 #monederos {
@@ -426,9 +497,11 @@ main {
     background-size:contain;
 }
 
+
 .se-parte {
     display: flex;
 }
+
 
 .contenedor-contacto {
     display: flex;
@@ -437,6 +510,7 @@ main {
     background: #000;
     box-shadow: 13px 13px 0px 0px #F3AB01;
 }
+
 
 .contenedor-contacto h3 {
     color:#FFF1E3;
@@ -448,6 +522,7 @@ main {
     text-transform: uppercase;
 }
 
+
 .contenedor-contacto p {
     color: var(--Cremita, #FFF1E3);
     font-family: "Lato";
@@ -458,6 +533,7 @@ main {
     text-transform: uppercase;
 }
 
+
 .boton-amarillo-grande {
     display: flex;
     width: 57.5rem;
@@ -467,12 +543,14 @@ main {
     flex-shrink: 0;
 }
 
+
 /***********EVENTOS************/
 .contenedor-h3 {
     background-color: #000;
     width: 1119px;
     height: 58px;
 }
+
 
 .fondocrema-negro {
     width: 1121px;
@@ -481,18 +559,6 @@ main {
     display: flex;
 }
 
-#ferias {
-    padding-left: 10rem;
-    padding-top: 5rem;
-    display: flex;
-    gap: 1rem;
-}
-
-.contenedor-main {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
 
 #ferias {
     padding-left: 10rem;
@@ -501,11 +567,29 @@ main {
     gap: 1rem;
 }
 
+
 .contenedor-main {
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
+
+
+#ferias {
+    padding-left: 10rem;
+    padding-top: 5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+
+.contenedor-main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
 
 
 /***********REVISTAS************/
@@ -513,11 +597,15 @@ main {
     display: flex;
     gap: 142px;
 
+
 }
+
 
 div#contenedor-revistas-fechayboton {
     padding: 5rem 0px;
 }
+
+
 
 
 .revista-imagen {
@@ -525,6 +613,7 @@ div#contenedor-revistas-fechayboton {
     box-shadow: 13px 13px 0px 0px #000;
     border: 3px solid #000;
 }
+
 
 .contenedor-revistas {
     /*revistas por individual*/
@@ -536,6 +625,7 @@ div#contenedor-revistas-fechayboton {
     gap: 1.14519rem;
 }
 
+
 #contenedor-catálogo {
     /*revistas en conjunto*/
     display: flex;
@@ -546,6 +636,7 @@ div#contenedor-revistas-fechayboton {
     gap: 6rem 10rem;
     flex-wrap: wrap;
 }
+
 
 .overlay-revistas {
     position: absolute;
@@ -565,15 +656,18 @@ div#contenedor-revistas-fechayboton {
     font-size: 4rem;
 }
 
+
 .revista-imagen:hover .overlay-revistas {
     opacity: 1;
     box-shadow: 13px 13px 0px 0px #F3AB01;
 }
 
+
 /***********VISTA REVISTA 12************/
 .intro-revista12 {
     display: flex;
 }
+
 
 .contenedor-edicion-info {
     display: flex;
@@ -585,6 +679,7 @@ div#contenedor-revistas-fechayboton {
 .contenedor-edicion-info h2{
     color: #F3AB01;
 }
+
 
 #edicion-numero{
     display: flex;
