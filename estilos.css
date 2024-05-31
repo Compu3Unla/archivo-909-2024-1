@@ -94,60 +94,6 @@ p {
 }
 
 
-/***********nav***********/
-header {
-    padding: 30px 0px;
-}
-
-
-.botonera {
-    width: 100%;
-    border-bottom: 3px solid #000;
-
-
-}
-
-
-.botonera a {
-    color: black;
-    padding: 10px 15px;
-    padding: 0.5rem;
-    transition: all 0.1s ease;
-}
-
-.botonera a.active { /*boton mas grande estando en el html clickeado*/
-    font-size: 1.5rem;
-    font-family: Lato;
-    padding: 0.5rem;
-    border-radius: 0.6rem 0.6rem 0rem 0rem;
-}
-
-
-
-
-.botonera ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.botonera ul li {
-    stroke-width: 3px;
-    stroke: var(--Negro, #000);
-    font-family: Lato;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-top: 3px solid #000;
-    border-right: 3px solid #000;
-    border-left: 3px solid #000;
-    border-radius: 10px 10px 0px 0px;
-}
-
-
-
-
 /*footer*/
 footer {
     padding: 3.125rem 0rem;
@@ -178,42 +124,6 @@ footer a {
     font-size: 2rem;
 
 
-}
-
-
-/***********fondos***********/
-body {
-    background-color: #FFF1E3;
-    margin-left: 7.5rem;
-    margin-right: 7.5rem;
-}
-
-
-.page-eventos {
-    background-color: #F3AB01;
-}
-
-
-
-
-
-
-/***********class***********/
-
-
-.recuadro-blanco-negro {
-    border: #000 3px solid;
-    background: #FFF;
-    box-shadow: 9px 9px 0px 0px;
-    padding: 2rem;
-}
-
-
-.recuadro-amarillo-negro {
-    border: #000 3px solid;
-    background: #F3AB01;
-    box-shadow: 9px 9px 0px 0px;
-    padding: 2rem;
 }
 
 
@@ -272,41 +182,6 @@ header {
 }
 
 
-
-
-/*footer*/
-footer {
-    padding: 3.125rem 0rem;
-    color: #000;
-}
-
-
-.contenedor-footer {
-    display: flex;
-    border: #000 3px solid;
-    background: #FFF;
-    width: 100%;
-    padding: 1.25rem 0rem;
-    align-items: center;
-    justify-content: space-around;
-}
-
-
-footer p {
-    font-family: Lato;
-    font-size: 1rem;
-}
-
-
-footer a {
-    color: #000;
-    font-family: "Bebas Neue";
-    font-size: 2rem;
-
-
-}
-
-
 /***********fondos***********/
 body {
     background-color: #FFF1E3;
@@ -318,10 +193,6 @@ body {
 .page-eventos {
     background-color: #F3AB01;
 }
-
-
-
-
 
 
 /***********class***********/
@@ -372,14 +243,7 @@ body {
     background-color: #FFF;
 }
 
-
-
-
-
-
 /***********INDEX************/
-
-
 main {
     display: flex;
     flex-direction: column;
