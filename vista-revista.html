@@ -23,21 +23,23 @@
         <nav class="botonera">
             <img class="logo-amarillo" src="img/logo-archivo909.svg" alt="logo-archivo909" width="173px" height="28px">
             <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="suscripcion.html">Suscribite</a></li>
                 <li><a href="entretenimiento.html">Eventos</a></li>
-                <li><a href="revistas.html">Revistas</a></li>
+                <li><a href="revistas.html" class="active">Revistas</a></li>
             </ul>
         </nav>
     </header>
-
+    <!------------------inicio main------------------>
     <main>
-        <div>
-            <a href="revistas.html"> <img src="img/flecha-izquierda.svg" alt="flecha izquierda"
-                    class="flechas"></button></a>
-            <button class="estrella"> </button>
+        <!--BOTONES-->
+        <div id="botones-revista" >
+            <a href="revistas.html" class="flechas"> <img src="img/flecha-izquierda.svg" alt="flecha izquierda" ></button></a>
+            <a href="#" class="boton-amarillo-grande"><img src="img/boton-estrella.svg" alt="boton estrella vacio" width="29.5" height="29.5"></a>
         </div>
+        <!--INTRO-->
         <section id="intro-revista">
+             <!--FOTOS-->
             <article id="fotos-edicion">
                 <img src="img/revistas-edicion-12.png" alt="portada revista 12" width="570px" height="776px" 780px>
                 <div>
@@ -45,8 +47,9 @@
                     <img src="img/vista-revista-2.jpg" alt="vista-revista-2" width="350px" height="385px">
                 </div>
             </article>
-
+            <!--CONTENEDOR INFO-->
             <article>
+                <!--cartel edicion-->
                 <div class="contenedor-edicion-info">
                     <h5>Mayo 2014</h5>
                     <div id="edicion-numero">
@@ -54,6 +57,7 @@
                         <img src="img/revistas-12.png" alt="numero12" width="95px" height="95px">
                     </div>
                 </div>
+                <!--descripcion-->
                 <div id="edicion-detalle">
                     <h3>género</h3>
                     <h3>arte ✢ filosofia ✢ cine ✢ dj’s ✢ creativos y más.</h3>
@@ -61,6 +65,7 @@
                         filosofía, entrevistas a DJ’s y productores, compilados fotográficos en HD, análisis de
                         películas y series, debates filosóficos para todxs.</p>
                 </div>
+                <!--tabla-detalles-->
                 <div id="tabla">
                     <div class="tabla-revista">
                         <h3>cantidad de paginas</h3>
@@ -71,14 +76,16 @@
                         <h3 id="borde-der">$5000</h3>
                     </div>
                 </div>
-
+                <!--boton comprar-->
                 <a href="suscripcion.html" class="boton-amarillo-grande"> Comprar</a>
             </article>
         </section>
-        <!-- carrusel-->
+        <!--INTRO-CARRUSEL-->
         <section intro-carrusel>
             <h2>otras ediciones</h2>
+            <!-- contenedor carrusel-->
             <div class="recuadro-crema-negro" id="carrusel">
+                <!-- contenidos carrusel-->
                 <div id="contenidos-carrusel">
                     <article id="revista11" class="contenedor-revistas-carrusel">
                         <img src="img/revistas-11.png" alt="numero11" width="80px" height="80px">
@@ -179,16 +186,14 @@
                             <div class="overlay-revistas">COMPRAR</div>
                         </div>
                     </article>
-                </div>
-                <div id="flechas-carrusel">
-                    <button class="boton-sinbordes"><img src="img/flecha-izquierda.svg" alt="flecha izquierda"
-                            class="flechas"></button>
-                    <button class="boton-sinbordes"> <img src="img/flecha-derecha.svg" alt="flecha derecha"
-                            class="flechas"></button>
-                </div>
-        </section> <!--fin carrusel-->
-        <a href="#top" id="flecha-volver" class="flechas"><img src="img/flecha-arriba.svg" alt="Volver arriba" width="21px" height="32px"></a><!--flecha de volver arriba-->
+                </div><!-- fin contenidos carrusel-->
+            </div><!-- fin CONTENEDOR carrusel-->
+        </section> <!--SECCION carrusel-->
+        <a href="#top" id="flecha-volver" class="flechas"><img src="img/flecha-arriba.svg" alt="Volver arriba"
+                width="21px" height="32px"></a><!--flecha de volver arriba-->
     </main>
+    <!-------fin main------->
+    <!-------footer------->
     <footer>
         <div class="contenedor-footer">
             <img src="img/logo-archivo909.svg" alt="imagen del logo" width="181px" height="30px">

@@ -68,6 +68,14 @@ h6 {
     line-height: normal;
 }
 
+p {
+    color: #000;
+    font-family: Lato;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
 
 /*nav*/
 
@@ -89,26 +97,53 @@ h6 {
     box-shadow: 8px 8px 0px 0px #000;
 }
 
-nav ul {
+header {
+    padding: 30px 0px;
+}
+
+.botonera {
     display: flex;
-    padding: 30px 0px 0px;
+    width: 100%;
+    border-bottom: 3px solid #000;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+}
+
+.botonera a {
+    color: black;
+    padding: 10px 15px;
+    padding: 0.5rem;
+    transition: all 0.1s ease;
+}
+
+.botonera a.active { /*boton mas grande estando en el html clickeado*/
+    font-size: 1.5rem;
+    font-family: Lato;
+    padding: 0.5rem;
+    border-radius: 0.6rem 0.6rem 0rem 0rem;
 }
 
 
-nav ul li {
+.botonera ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 3em;
+}
+
+
+.botonera ul li {
     stroke-width: 3px;
     stroke: var(--Negro, #000);
-}
-
-
-p {
-    color: #000;
     font-family: Lato;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
+    padding: 10px 15px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 
@@ -130,77 +165,6 @@ footer {
 }
 
 
-footer p {
-    font-family: Lato;
-    font-size: 1rem;
-}
-
-
-footer a {
-    color: #000;
-    font-family: "Bebas Neue";
-    font-size: 2rem;
-
-
-}
-
-
-/***********nav***********/
-header {
-    padding: 30px 0px;
-}
-
-
-.botonera {
-    display: flex;
-    width: 100%;
-    border-bottom: 3px solid #000;
-    justify-content: space-between;
-}
-
-
-.botonera a {
-    color: black;
-    padding: 10px 15px;
-    padding: 0.5rem;
-    transition: all 0.1s ease;
-}
-
-
-.botonera a.active {
-    /*boton mas grande estando en el html clickeado*/
-    font-size: 1.5rem;
-    font-family: Lato;
-    padding: 0.5rem;
-    border-radius: 0.6rem 0.6rem 0rem 0rem;
-}
-
-
-.botonera a:hover {
-    font-size: 1.1em;
-}
-
-.botonera ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3em;
-}
-
-
-.botonera ul li {
-    stroke-width: 3px;
-    stroke: var(--Negro, #000);
-    font-family: Lato;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-top: 3px solid #000;
-    border-right: 3px solid #000;
-    border-left: 3px solid #000;
-    padding: 5px 5px 0px;
-    border-radius: 10px 10px 0px 0px;
-}
 
 
 /***********fondos***********/
@@ -604,7 +568,6 @@ div#contenedor-revistas-fechayboton {
 }
 
 
-
 #cartel-exclamacion-hover {
     background-color: #F3AB01;
     box-shadow: 9px 9px 0px 0px #000;
@@ -673,9 +636,12 @@ div#contenedor-revistas-fechayboton {
     box-shadow: 13px 13px 0px 0px #F3AB01;
 }
 
-
 /***********VISTA REVISTA 12************/
 /*intro*/
+#botones-revista{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 #intro-revista {
@@ -730,10 +696,12 @@ div#contenedor-revistas-fechayboton {
 }
 
 #contenidos-carrusel {
-    padding: 0px 30px;
+    padding: 0px 20px 30px;
     display: flex;
     gap: 60px;
     cursor: pointer;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
 .contenedor-revistas-carrusel {
@@ -741,16 +709,19 @@ div#contenedor-revistas-fechayboton {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
 }
 
-#flechas-carrusel {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+#contenidos-carrusel::-webkit-scrollbar {
+height: 20px;
+border-radius: 10px;
+background-color: #F3AB01;
+border:3px solid #F3AB01;
+}
+
+#contenidos-carrusel::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+    width: 10px;
 }
 
 .boton-sinbordes {
