@@ -636,9 +636,12 @@ div#contenedor-revistas-fechayboton {
     box-shadow: 13px 13px 0px 0px #F3AB01;
 }
 
-
 /***********VISTA REVISTA 12************/
 /*intro*/
+#botones-revista{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 #intro-revista {
@@ -693,10 +696,12 @@ div#contenedor-revistas-fechayboton {
 }
 
 #contenidos-carrusel {
-    padding: 0px 30px;
+    padding: 0px 20px 30px;
     display: flex;
     gap: 60px;
     cursor: pointer;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
 .contenedor-revistas-carrusel {
@@ -704,16 +709,19 @@ div#contenedor-revistas-fechayboton {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
 }
 
-#flechas-carrusel {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+#contenidos-carrusel::-webkit-scrollbar {
+height: 20px;
+border-radius: 10px;
+background-color: #F3AB01;
+border:3px solid #F3AB01;
+}
+
+#contenidos-carrusel::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+    width: 10px;
 }
 
 .boton-sinbordes {
