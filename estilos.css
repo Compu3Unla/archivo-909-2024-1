@@ -473,12 +473,16 @@ a #flecha-volver {
     padding: 20px 50px;
 }
 
+.logos:hover {
+    background-color: #F3AB01;
+}
+
 .divider h3 {
     padding: 20px;
 }
 
 .divider {
-    border-bottom: 2px solid #000;
+    border-bottom: 3px solid #000;
     margin-bottom: 20px;  
     background-color: #FFF1E3;
 }
@@ -595,6 +599,13 @@ textarea {
     padding: 15px;
     max-width: 40%;
     box-shadow: 8px 8px 0px 0px #000;
+}
+
+.enviar:hover {
+    border: 3px solid #000;
+    background: #000;
+    box-shadow: 9px 9px 0px 0px #F3AB01;
+    color: #F3AB01;
 }
 
 /***********EVENTOS************/
