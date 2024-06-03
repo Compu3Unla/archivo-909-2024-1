@@ -446,16 +446,37 @@ a #flecha-volver {
 }
 
 /***********SUSCRIPCION************/
-#monederos {
+
+.metodos-pago {
     background-image: url(img/monederos.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #000;
+    background: var(--Cremita, #FFF1E3);
+    box-shadow: 13px 13px 0px 0px #000;
+    height: 50vh;
 }
 
+.divider h3{
+    padding: 20px;
+}
 
-.se-parte {
+.divider {
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;  
+}
+
+#monederos {
     display: flex;
+    padding: 50px;
+    gap: 50px;
 }
 
+#descripcion-club {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .contenedor-contacto {
     display: flex;
@@ -465,6 +486,18 @@ a #flecha-volver {
     box-shadow: 13px 13px 0px 0px #F3AB01;
 }
 
+.contacto {
+    display: flex;
+    max-width: 80vw;
+    padding: 50px;
+    gap: 50px;
+}
+
+.compu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
 .contenedor-contacto h3 {
     color: #FFF1E3;
@@ -489,7 +522,16 @@ a #flecha-volver {
     text-transform: uppercase;
 }
 
-
+.recuadro-crema-negro-susc {
+    border: 3px solid #000;
+    background: var(--Cremita, #FFF1E3);
+    box-shadow: 13px 13px 0px 0px #000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+}
 
 
 /***********EVENTOS************/
