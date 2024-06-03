@@ -32,7 +32,9 @@
     </header>
 
     <main>
-            <h2>Recibí la revista mensualmente</h2>
+            <div class="titulo-susc">
+                <h2>Recibí la revista mensualmente</h2>
+            </div>
             <article class="metodos-pago">
                 <div class="divider">
                     <h3>Métodos de pago</h3>
@@ -72,15 +74,15 @@
                     <img src="img/compu-suscripcion.png">
                 </div>
                 <div class="recuadro-amarillo-negro">
-                    <form method="post" action="mailto=alzumartinagmail.com subject=Email enviado desde el formulario"
+                    <form method="post" action="mailto=alzumartinagmail.com?subject=Email enviado desde el formulario"
                         target="_self" enctype="text/plain">
                         <input type="text" name="nombre" id="nombre" placeholder="Nombre">
 
-                        <input type="email" name="email" id="Nombre" placeholder="Email">
+                        <input type="email" name="email" id="email" placeholder="Email">
 
                         <textarea name="Consulta" id="consulta" placeholder="Consulta"></textarea>
 
-                        <input type="submit" value="Enviar" formenctype="text/plain">
+                        <input class="enviar" type="submit" value="Enviar" formenctype="text/plain">
                     </form>
                 </div>
             </section>
