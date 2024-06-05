@@ -197,6 +197,7 @@ button {
 .amarrilo-contenedornegro {
     display: flex;
     width: auto;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     border-radius: 3.75rem;
@@ -244,8 +245,9 @@ a #flecha-volver {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 15px;
-    max-width: 40%;
+    padding: 15px 20px;
+    max-width: fit-content;
+    height: fit-content;
     box-shadow: 8px 8px 0px 0px #000;
 }
 
@@ -258,8 +260,8 @@ a #flecha-volver {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 15px;
-    max-width: 50%;
+    padding: 15px 25px;
+    max-width: fit-content;
     box-shadow: 8px 8px 0px 0px #F3AB01;
 }
 
@@ -309,6 +311,22 @@ a #flecha-volver {
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+/*animacion*/
+
+.disco {
+    animation: girar 5s infinite linear;
+}
+
+@keyframes girar {
+    from{
+        transform: rotate(360deg);
+    }
+    
+    to{
+        transform: rotate(0deg);
+    }
 }
 
 .inicioyedicion {
@@ -372,7 +390,7 @@ a #flecha-volver {
 .contenedor-texto {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
 }
 
 /*PREGUNTAS FRECUENTES*/
@@ -416,7 +434,7 @@ a #flecha-volver {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background-size: 60% auto;
+    background-size: 60%;
     background-position: right bottom;
     background-repeat: no-repeat;
 }
@@ -427,7 +445,7 @@ a #flecha-volver {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 40px;
+    gap: 30px;
 }
 
 #mesa-redonda .recuadro-crema-negro {
@@ -435,6 +453,7 @@ a #flecha-volver {
     background-size: 50% auto;
     background-position: right bottom;
     background-repeat: no-repeat;
+    height: 40vh;
 }
 
 .index .recuadro-crema-negro {
@@ -895,4 +914,65 @@ border:3px solid #F3AB01;
 .boton-sinbordes {
     border: none;
     background: none;
+}
+
+/********CLUB DE LA MESA REDONDA 1********/
+
+
+
+/********CLUB DE LA MESA REDONDA 2********/
+
+
+
+/********CLUB DE LA MESA REDONDA VIDEO********/
+
+#blues-de-los-50 h3 {
+    font-weight: 900;
+}
+
+#blues-de-los-50 span {
+    font-style: italic;
+    font-weight: 700;
+}
+
+#blues-de-los-50 h2 {
+    border-top: 3px solid #000;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    padding: 35px 50px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+#blues-de-los-50 .recuadro-crema-negro {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-titulos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-blues {
+    background-image: url(img/puntos-negro.svg);
+    background-size: 25% auto;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    border: 3px solid #000;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texto-blues p {
+    max-width: 50%;
+}
+
+.txt-vid {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+
 }
