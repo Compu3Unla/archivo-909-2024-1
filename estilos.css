@@ -917,11 +917,178 @@ border:3px solid #F3AB01;
 }
 
 /********CLUB DE LA MESA REDONDA 1********/
+.page-club1{
+    background-color: #F3AB01;
+}
 
+.recuadro-crema-negro-fondoclub{
+    border: 3px solid #000;
+    background: var(--Cremita, #FFF1E3);
+    box-shadow: 13px 13px 0px 0px #000;
+    height: 50vh;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.recuadro-crema-negro-club{
+    border: #000 3px solid;
+    background-color: #FFF1E3;
+    box-shadow: 9px 9px 0px 0px;
+    padding: 2rem;
+    width: 47%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.contenedor-club-texto{
+    display: flex;
+    gap: 5rem;
+}
+
+.botonera-club{
+    gap: 3rem;
+    display: flex;
+}
+
+.botonera-club a{
+    text-decoration: none;
+    color: #000;
+    border: 3px solid black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 8px 30px;
+    border-radius: 19px;
+}
+
+.botonera-club a:hover{
+    background-color: #F3AB01;
+}
+
+.amarillo-contenedor-negro-club{
+    display: flex;
+    width: 49%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3.75rem;
+    background: #000;
+    padding: 1.25rem;
+}
+
+.contenedor-botonera{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
 
 
 /********CLUB DE LA MESA REDONDA 2********/
 
+.recuadro-crema-negro-fondoclub2{
+    border: 3px solid #000;
+    background: var(--Cremita, #FFF1E3);
+    box-shadow: 13px 13px 0px 0px #000;
+    height: fit-content;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.flechas-blancas{
+    background: #ffffff;
+    box-shadow: 6px 6px 0px 0px #000;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: block;
+    height: 3vh;
+    max-width: fit-content;
+    margin-bottom: 24px;
+    border: 2px solid black;
+}
+
+.flechas-blancas:hover{
+    background-color: #F3AB01;
+    box-shadow: 9px 9px 0px 0px #000;
+
+}
+
+/***recuadros de imagenes+suscripcion***/
+#contenedor-imagenesclub{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-imagenesclub a{
+    text-decoration: none;
+    color: #F3AB01;
+}
+
+.imagenes-club{
+    border: 3px solid black;
+}
+
+.secciones-artistas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-amarillo-club{
+    background-color: #F3AB01;
+    width: 325px;
+    height: 170px;
+    display: flex;
+    padding: 19px;
+    justify-content: space-between;
+    border: 3px solid black;
+}
+
+.boton-negro-club{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 42px;
+    width: 131px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.h4-club{
+    font-family: "Bebas Neue";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    height: 2.8rem;
+}
+
+.contenedor-txt-club{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contenedor-botones-club{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5rem;
+    width: 134px;
+}
+
+.contenedor-imagenytexto{
+    display: flex;
+    flex-direction: column;
+}
 
 
 /********CLUB DE LA MESA REDONDA VIDEO********/
