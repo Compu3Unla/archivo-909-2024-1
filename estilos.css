@@ -175,7 +175,7 @@ body {
 }
 
 
-.page-eventos {
+.page-eventos,.page-club1 {
     background-color: #F3AB01;
 }
 
@@ -965,7 +965,7 @@ border:3px solid #F3AB01;
     border-radius: 19px;
 }
 
-.botonera-club a:hover{
+.botonera-club a:hover, .boton-club-active{
     background-color: #F3AB01;
 }
 
