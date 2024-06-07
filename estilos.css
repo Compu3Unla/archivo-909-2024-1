@@ -79,8 +79,8 @@ p {
 
 /*nav*/
 
-.logo-amarillo{
-    background-color:#F3AB01;
+.logo-amarillo {
+    background-color: #F3AB01;
     border: 3px solid black;
     padding: 0.5em;
     position: relative;
@@ -88,8 +88,8 @@ p {
     box-shadow: 8px 8px 0px 0px #000;
 }
 
-.logo-blanco{
-    background-color:#ffffff;
+.logo-blanco {
+    background-color: #ffffff;
     border: 3px solid black;
     padding: 0.5em;
     position: relative;
@@ -116,7 +116,8 @@ header {
     transition: all 0.1s ease;
 }
 
-.botonera a.active { /*boton mas grande estando en el html clickeado*/
+.botonera a.active {
+    /*boton mas grande estando en el html clickeado*/
     font-size: 1.5rem;
     font-family: Lato;
     padding: 0.5rem;
@@ -175,7 +176,8 @@ body {
 }
 
 
-.page-eventos,.page-club1 {
+.page-eventos,
+.page-club1 {
     background-color: #F3AB01;
 }
 
@@ -221,6 +223,7 @@ button {
     border: 1px solid #000;
     cursor: pointer;
 }
+
 a #flecha-volver {
     padding: 30px;
 }
@@ -274,6 +277,7 @@ a #flecha-volver {
     border: 3px solid #000;
     background: #F3AB01;
     box-shadow: 9px 9px 0px 0px #000;
+    color: #000;
     text-align: center;
     font-family: "Bebas Neue";
     font-size: 2.5rem;
@@ -320,11 +324,11 @@ a #flecha-volver {
 }
 
 @keyframes girar {
-    from{
+    from {
         transform: rotate(360deg);
     }
-    
-    to{
+
+    to {
         transform: rotate(0deg);
     }
 }
@@ -334,7 +338,7 @@ a #flecha-volver {
     gap: 40px;
 }
 
-.inicioyedicion .recuadro-crema-negro{
+.inicioyedicion .recuadro-crema-negro {
     background-image: url(img/fondo-inicio.png);
     max-width: 69%;
 }
@@ -471,7 +475,7 @@ a #flecha-volver {
 
 .metodos-pago {
     background-image: url(img/monederos.png);
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     border: 3px solid #000;
     box-shadow: 13px 13px 0px 0px #000;
@@ -502,7 +506,7 @@ a #flecha-volver {
 
 .divider {
     border-bottom: 3px solid #000;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
     background-color: #FFF1E3;
 }
 
@@ -564,7 +568,8 @@ a #flecha-volver {
 }
 
 .recuadro-crema-negro-susc {
-    border: 3px solid #000;;
+    border: 3px solid #000;
+    ;
     box-shadow: 13px 13px 0px 0px #000;
     display: flex;
     flex-direction: column;
@@ -589,8 +594,9 @@ form {
     justify-content: center;
 }
 
-input, textarea {
-    background-color:#ffffff;
+input,
+textarea {
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 15px;
     font-family: "Lato";
@@ -680,7 +686,7 @@ textarea {
     gap: 3em;
 }
 
-.titulo-feria{
+.titulo-feria {
     border: 3px solid #000;
     box-shadow: 13px 13px 0px 0px #000;
     width: fit-content;
@@ -697,31 +703,32 @@ textarea {
     gap: 1em;
 }
 
-.info-feria{
+.info-feria {
     display: flex;
     width: fit-content;
     flex-direction: column;
     gap: 10px;
 }
 
-.sobre-feria{
+.sobre-feria {
     display: flex;
     width: 75%;
     gap: 3em;
 }
 
-.paquetes-chicos{
+.paquetes-chicos {
     display: flex;
     flex-direction: column;
     gap: 1em;
     width: 71%;
 }
-.subs-info{
+
+.subs-info {
     font-weight: 800;
     text-transform: uppercase;
 }
 
-.contenedor-info-feria{
+.contenedor-info-feria {
     display: flex;
     padding-top: 3em;
     gap: 3em;
@@ -806,8 +813,7 @@ div#contenedor-revistas-fechayboton {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    /*fondo transparecia*/
+    background-color: rgba(0, 0, 0, 0.5);/*fondo transparecia*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -824,30 +830,61 @@ div#contenedor-revistas-fechayboton {
 }
 
 /***********VISTA REVISTA 12************/
-/*intro*/
-#botones-revista{
+/*intro botones*/
+#botones-revista {
     display: flex;
     justify-content: space-between;
 }
 
 
+.boton-amarillo-estrella {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 214px;
+    height: 49px;
+    border-radius: 0.5rem;
+    border: 2.748px solid #000;
+    background: #F3AB01;
+    box-shadow: 8px 8px 0px 0px #000;
+    cursor: pointer;
+}
+
+/*intro*/
 #intro-revista {
     display: flex;
-    gap: 20px;
-    padding: 30px 0px;
+    gap: 50px;
+    padding: 60px 0px;
+    align-items: stretch;
 }
 
-#fotos-edicion {
+/*galeria*/
+#galeria-revista {
     display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 60px;
+    width: 50%;
 }
 
-#fotos-edicion img {
-    border: 3px solid #000;
+#thumbnails-galeria {
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.9775rem;
+    border: 1px solid #000;
+    background: #FFF;
+    box-shadow: 8px 8px 0px 0px #000;
 }
 
-#fotos-edicion div {
+/*contenedor de edicion y detalles*/
+#detalles-edición {
+    width: 50%;
+    gap: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .contenedor-edicion-info {
@@ -868,6 +905,43 @@ div#contenedor-revistas-fechayboton {
 #edicion-numero {
     display: flex;
     align-items: center;
+}
+
+#edicion-genero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:20px;
+}
+
+#edicion-genero h4 {
+    color: #000;
+    font-family: Lato;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+#tabla {
+    display: flex;
+
+}
+
+#tabla h3 {
+    border-top: 3px solid #000;
+
+}
+
+.tabla-detalle {
+    border-left: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.tabla-titulos {
+
+    border-bottom: 3px solid #000;
 }
 
 #tabla h3 {
@@ -899,10 +973,10 @@ div#contenedor-revistas-fechayboton {
 }
 
 #contenidos-carrusel::-webkit-scrollbar {
-height: 20px;
-border-radius: 10px;
-background-color: #F3AB01;
-border:3px solid #F3AB01;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #F3AB01;
+    border: 3px solid #F3AB01;
 }
 
 #contenidos-carrusel::-webkit-scrollbar-thumb {
@@ -917,11 +991,11 @@ border:3px solid #F3AB01;
 }
 
 /********CLUB DE LA MESA REDONDA 1********/
-.page-club1{
+.page-club1 {
     background-color: #F3AB01;
 }
 
-.recuadro-crema-negro-fondoclub{
+.recuadro-crema-negro-fondoclub {
     border: 3px solid #000;
     background: var(--Cremita, #FFF1E3);
     box-shadow: 13px 13px 0px 0px #000;
@@ -932,7 +1006,7 @@ border:3px solid #F3AB01;
     gap: 4rem;
 }
 
-.recuadro-crema-negro-club{
+.recuadro-crema-negro-club {
     border: #000 3px solid;
     background-color: #FFF1E3;
     box-shadow: 9px 9px 0px 0px;
@@ -943,17 +1017,17 @@ border:3px solid #F3AB01;
     flex-direction: column;
 }
 
-.contenedor-club-texto{
+.contenedor-club-texto {
     display: flex;
     gap: 5rem;
 }
 
-.botonera-club{
+.botonera-club {
     gap: 3rem;
     display: flex;
 }
 
-.botonera-club a{
+.botonera-club a {
     text-decoration: none;
     color: #000;
     border: 3px solid black;
@@ -965,11 +1039,12 @@ border:3px solid #F3AB01;
     border-radius: 19px;
 }
 
-.botonera-club a:hover, .boton-club-active{
+.botonera-club a:hover,
+.boton-club-active {
     background-color: #F3AB01;
 }
 
-.amarillo-contenedor-negro-club{
+.amarillo-contenedor-negro-club {
     display: flex;
     width: 49%;
     height: fit-content;
@@ -980,7 +1055,7 @@ border:3px solid #F3AB01;
     padding: 1.25rem;
 }
 
-.contenedor-botonera{
+.contenedor-botonera {
     display: flex;
     gap: 3rem;
     align-items: center;
@@ -989,7 +1064,7 @@ border:3px solid #F3AB01;
 
 /********CLUB DE LA MESA REDONDA 2********/
 
-.recuadro-crema-negro-fondoclub2{
+.recuadro-crema-negro-fondoclub2 {
     border: 3px solid #000;
     background: var(--Cremita, #FFF1E3);
     box-shadow: 13px 13px 0px 0px #000;
@@ -1000,7 +1075,7 @@ border:3px solid #F3AB01;
     gap: 4rem;
 }
 
-.flechas-blancas{
+.flechas-blancas {
     background: #ffffff;
     box-shadow: 6px 6px 0px 0px #000;
     padding: 10px 15px;
@@ -1012,33 +1087,33 @@ border:3px solid #F3AB01;
     border: 2px solid black;
 }
 
-.flechas-blancas:hover{
+.flechas-blancas:hover {
     background-color: #F3AB01;
     box-shadow: 9px 9px 0px 0px #000;
 
 }
 
 /***recuadros de imagenes+suscripcion***/
-#contenedor-imagenesclub{
+#contenedor-imagenesclub {
     display: flex;
     justify-content: space-between;
 }
 
-.contenedor-imagenesclub a{
+.contenedor-imagenesclub a {
     text-decoration: none;
     color: #F3AB01;
 }
 
-.imagenes-club{
+.imagenes-club {
     border: 3px solid black;
 }
 
-.secciones-artistas{
+.secciones-artistas {
     display: flex;
     justify-content: space-between;
 }
 
-.contenedor-amarillo-club{
+.contenedor-amarillo-club {
     background-color: #F3AB01;
     width: 325px;
     height: 170px;
@@ -1048,7 +1123,7 @@ border:3px solid #F3AB01;
     border: 3px solid black;
 }
 
-.boton-negro-club{
+.boton-negro-club {
     display: flex;
     flex-direction: row;
     background-color: black;
@@ -1062,7 +1137,7 @@ border:3px solid #F3AB01;
     border-radius: 10px;
 }
 
-.h4-club{
+.h4-club {
     font-family: "Bebas Neue";
     font-size: 3rem;
     font-style: normal;
@@ -1071,13 +1146,13 @@ border:3px solid #F3AB01;
     height: 2.8rem;
 }
 
-.contenedor-txt-club{
+.contenedor-txt-club {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.contenedor-botones-club{
+.contenedor-botones-club {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -1085,7 +1160,7 @@ border:3px solid #F3AB01;
     width: 134px;
 }
 
-.contenedor-imagenytexto{
+.contenedor-imagenytexto {
     display: flex;
     flex-direction: column;
 }
