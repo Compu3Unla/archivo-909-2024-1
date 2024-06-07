@@ -164,7 +164,16 @@ footer {
     justify-content: space-around;
 }
 
-
+footer p{
+    color: var(--Negro, #000);
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101%; 
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+}
 
 
 /***********fondos***********/
