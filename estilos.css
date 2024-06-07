@@ -228,7 +228,7 @@ a #flecha-volver {
     padding: 30px;
 }
 
-.flecha-arriba{
+.flecha-arriba {
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -748,19 +748,24 @@ textarea {
 /***********REVISTAS************/
 #intro-revistas {
     display: flex;
-    gap: 142px;
+    align-items: stretch;
+    gap: 98px;
+    padding-bottom: 60px;
 }
 
-div#contenedor-revistas-fechayboton {
-    padding: 30px 0px;
+#revistas-carteles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
 
 /*cartel hover revistas*/
 #contenedor-efecto-cartel {
     display: flex;
     align-items: center;
     padding: 20px 0px;
-    width: 100%;
+    min-height: 87px;
 }
 
 #boton-signo-exclamacion {
@@ -768,24 +773,28 @@ div#contenedor-revistas-fechayboton {
     background-color: #F3AB01;
     box-shadow: 9px 9px 0px 0px #000;
     padding: 10px;
+    min-height: 87px;
+    height: auto;
 }
 
 
 #cartel-exclamacion-hover {
+    display: flex;
+    align-items: center;
     background-color: #F3AB01;
     box-shadow: 9px 9px 0px 0px #000;
     width: 100%;
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    align-items: center;
+    height: 87px;
     opacity: 0;
-}
+    transition: opacity 0.5s ease;
+    padding: 0px 20px;
 
+}
 
 #contenedor-efecto-cartel:hover #cartel-exclamacion-hover {
     opacity: 1;
 }
+
 
 /*seccion revistas*/
 .revista-imagen {
@@ -822,7 +831,8 @@ div#contenedor-revistas-fechayboton {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);/*fondo transparecia*/
+    background-color: rgba(0, 0, 0, 0.5);
+    /*fondo transparecia*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -920,7 +930,7 @@ div#contenedor-revistas-fechayboton {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
 #edicion-genero h4 {
@@ -1087,10 +1097,9 @@ div#contenedor-revistas-fechayboton {
 .flechas-blancas {
     background: #ffffff;
     box-shadow: 6px 6px 0px 0px #000;
-    padding: 10px 15px;
+    padding:15px;
     cursor: pointer;
     display: block;
-    height: 3vh;
     max-width: fit-content;
     margin-bottom: 24px;
     border: 2px solid black;
