@@ -228,6 +228,15 @@ a #flecha-volver {
     padding: 30px;
 }
 
+.flecha-arriba{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1000;
+}
+
 .recuadro-crema-negro {
     border: 3px solid #000;
     background: var(--Cremita, #FFF1E3);
@@ -783,7 +792,9 @@ div#contenedor-revistas-fechayboton {
     position: relative;
     box-shadow: 13px 13px 0px 0px #000;
     border: 3px solid #000;
+    display: flex;
 }
+
 
 .contenedor-revistas {
     /*revistas por individual*/
@@ -791,7 +802,6 @@ div#contenedor-revistas-fechayboton {
     position: relative;
     flex-direction: column;
     align-items: center;
-    position: relative;
     gap: 1.14519rem;
     cursor: pointer;
 }
@@ -799,7 +809,6 @@ div#contenedor-revistas-fechayboton {
 #contenedor-catálogo {
     /*revistas en conjunto*/
     display: flex;
-    /*creo que se resolveria mejor con display grid, aun no termine de entender del todo*/
     width: 100%;
     padding: 2.5rem 0rem;
     justify-content: space-evenly;
