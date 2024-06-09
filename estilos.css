@@ -504,7 +504,7 @@ a #flecha-volver {
 .iconos-pago {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 10%;
+    padding-top: 7%;
 }
 
 .logos {
@@ -602,6 +602,10 @@ a #flecha-volver {
 
 .recuadro-crema-negro-susc h2 {
     max-width: 400px;
+}
+
+.recuadro-crema-negro-susc:hover {
+    background-color: #FFF;
 }
 
 form {
