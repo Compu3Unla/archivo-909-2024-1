@@ -281,11 +281,13 @@ a #flecha-volver {
     max-width: fit-content;
     box-shadow: 8px 8px 0px 0px #F3AB01;
 }
+
 .boton-negro:hover {
     background-color: #F3AB01;
     box-shadow: 8px 8px 0px 0px #000;
     color: #000;
 }
+
 .boton-amarillo-grande {
     padding: 10px;
     display: flex;
@@ -1205,7 +1207,7 @@ textarea {
     border-radius: 10px;
 }
 
-.boton-negro-club:hover{
+.boton-negro-club:hover {
     transition: ease 300ms;
     background-color: #FFF1E3;
 }
@@ -1292,157 +1294,246 @@ textarea {
     gap: 10%;
 
 }
+ /***************************MEDIA QUERIES / RESPONSIVE 600PX********************/
+@media screen and (max-width:600px) {
 
-@media screen and (max-width:600px){
-/*******index********************/
-
-
-
-/*******suscripcion********************/
-
-
-
-/*******revistas********************/
-
-
-
-/*******eventos********************/
-.page-eventos{
-    background-color: #F3AB01;
-    margin-left: 20px;
-    margin-right: 7.5rem;
-}
-
-.contenedor-main {
+/**********************nav********************************/
+/**********************footer********************************/
+.contenedor-footer{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-}
-
-.contenedor-h3 {
-    background-color: #000;
-    height: 47px;
-    display: flex;
-    padding: 6px;
-}
-
-.sub-eventos {
-    color: #FFF1E3;
-    font-family: Lato;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    line-height: 20px;
-}
-
-.img-clip-eventos{
-    width: 100px;
-    height: 145px;
-}
-
-.contenedor-h2-eventos{
-    width: 59%;
-}
-
-h2 {
-    color: #000;
-    font-family: "Bebas Neue";
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 1em;
-}
-
-h3{
-    color: #000;
-    font-family: Lato;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    line-height: 16px;
-}
-
-#ferias {
-    display: flex;
     flex-direction: column;
-}
+    align-items: center;
 
-.contenedor-main {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
 }
+/***********************general********************************/
 
-.recuadro-crema-negro-eventos {
-    border: 3px solid #000;
-    background: var(--Cremita, #FFF1E3);
-    box-shadow: 10px 13px 0px 0px #000;
-    padding: 15px
-}
 
-#contenedores-ferias {
-    display: flex;
-    flex-direction: column;
-    gap: 31px;
-    width: 57%;
-}
+    .ocultar-en-responsive {
+        display: none;
+    }
+  /*esta etiqueta ponganla a todo lo que quieran ocultar, yo por ej decidí sacar la imagen grande en las revistas y le puse esta class*/
 
-.titulo-feria {
-    border: 3px solid #000;
-    box-shadow: 7px 8px 0px 0px #000;
-    width: fit-content;
-    padding: 8px;
-    width: 85%;
-}
+    
 
-.foto-evento {
-    border: 3px solid black;
-    margin-bottom: 1em;
-}
 
-.insta-feria {
-    display: flex;
-    gap: 10px;
-}
+    /****************************************INDEX****************************************/
 
-p{
-    color: #000;
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 18px;
-    font-style: normal;
-    font-weight: 400;
-}
 
-.sobre-feria {
-    display: flex;
-    gap: 22px;
-    width: 100%;
-}
 
-.paquetes-chicos {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
-}
+    /****************************************SUSCRIPCION**********************************/
 
-.subs-info {
-    font-weight: 800;
-    text-transform: uppercase;
-}
 
-.contenedor-info-feria {
-    display: flex;
-    padding-top: 25px;
-    gap: 10px;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-}
+
+    /****************************************REVISTAS**************************************/
+    /*tipografias*/
+    .page-revistas h2 {
+        font-size: 8rem
+    }
+
+    .page-revistas h3 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .page-revistas p{
+        font-size: 1.5rem;
+        line-height: 35px;
+        
+    } 
+    /*general*/
+    .page-revistas {
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #intro-revistas {
+        width: 590px;
+        padding: 20px 0px;
+    }
+    
+    #contenedor-titulos {
+        width: 80%;
+        display: flex;
+        height: 44vh;
+        padding: 20px 20px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+    .contenedor-efecto-cartel {
+        display: flex;
+        align-items: stretch;
+        padding: 20px 0px;
+    }
+
+    #contenedor-revistas-fechayboton {
+        padding: 30px 0px;
+        width: 90%;
+    }
+
+    #cartel-exclamacion-hover {
+        opacity: 1;
+        padding: 42px;
+    }
+
+    #contenedor-catálogo {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1.5rem 0rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contenedor-revistas {
+        width: 90%;
+    }
+
+    .revista-imagen {
+        width: fit-content;
+    }
+
+
+    /***************************************EVENTOS**************************************/
+    .page-eventos {
+        background-color: #F3AB01;
+        margin-left: 20px;
+        margin-right: 7.5rem;
+    }
+
+    .contenedor-main {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contenedor-h3 {
+        background-color: #000;
+        height: 47px;
+        display: flex;
+        padding: 6px;
+    }
+
+    .sub-eventos {
+        color: #FFF1E3;
+        font-family: Lato;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        line-height: 20px;
+    }
+
+    .img-clip-eventos {
+        width: 100px;
+        height: 145px;
+    }
+
+    .contenedor-h2-eventos {
+        width: 59%;
+    }
+
+    h2 {
+        color: #000;
+        font-family: "Bebas Neue";
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1em;
+    }
+
+    h3 {
+        color: #000;
+        font-family: Lato;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        line-height: 16px;
+    }
+
+    #ferias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-main {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .recuadro-crema-negro-eventos {
+        border: 3px solid #000;
+        background: var(--Cremita, #FFF1E3);
+        box-shadow: 10px 13px 0px 0px #000;
+        padding: 15px
+    }
+
+    #contenedores-ferias {
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+        width: 57%;
+    }
+
+    .titulo-feria {
+        border: 3px solid #000;
+        box-shadow: 7px 8px 0px 0px #000;
+        width: fit-content;
+        padding: 8px;
+        width: 85%;
+    }
+
+    .foto-evento {
+        border: 3px solid black;
+        margin-bottom: 1em;
+    }
+
+    .insta-feria {
+        display: flex;
+        gap: 10px;
+    }
+
+    p {
+        color: #000;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 18px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .sobre-feria {
+        display: flex;
+        gap: 22px;
+        width: 100%;
+    }
+
+    .paquetes-chicos {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 100%;
+    }
+
+    .subs-info {
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .contenedor-info-feria {
+        display: flex;
+        padding-top: 25px;
+        gap: 10px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
 
 }
