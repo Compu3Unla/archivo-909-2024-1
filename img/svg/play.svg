@@ -1,13 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20.04">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #f3aa00;
-      }
-    </style>
-  </defs>
-  <g id="Capa_1-2" data-name="Capa 1">
-    <path class="cls-1" d="m20,10.04c-.03,5.67-4.51,9.63-9.34,9.97-2.99.22-5.58-.84-7.7-2.94C.92,15.04-.1,12.53,0,9.63c.1-2.6,1.11-4.86,2.95-6.71C4.91.98,7.31.01,10.03,0c2.74-.01,5.14,1.02,7.07,2.96,1.92,1.94,2.89,4.33,2.9,7.08ZM7.42,5.64v8.75c2.47-1.46,4.92-2.9,7.42-4.37-2.52-1.48-4.96-2.92-7.42-4.37Z"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_2_00000173120291015867043160000003175454465856828557_"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
+	 style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g id="Capa_1-2">
+	<path d="M20,10c0,5.7-4.5,9.6-9.3,10c-3,0.2-5.6-0.8-7.7-2.9c-2-2-3.1-4.5-3-7.4C0.1,7,1.1,4.8,3,2.9C4.9,1,7.3,0,10,0
+		c2.7,0,5.1,1,7.1,3C19,4.9,20,7.3,20,10z M7.4,5.6v8.8c2.5-1.5,4.9-2.9,7.4-4.4C12.3,8.5,9.9,7.1,7.4,5.6L7.4,5.6z"/>
+</g>
 </svg>
