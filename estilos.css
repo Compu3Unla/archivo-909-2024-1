@@ -78,11 +78,11 @@ p {
 
 
 /*nav*/
-.nav-mobile{
+.nav-mobile {
     display: none;
 }
 
-header{
+header {
     padding: 30px 0px;
 }
 
@@ -152,6 +152,10 @@ header{
 
 
 /*footer*/
+#iconos-contacto {
+    display: none;
+}
+
 footer {
     padding: 60px 0px;
 }
@@ -268,8 +272,6 @@ a #flecha-volver {
     height: fit-content;
     box-shadow: 8px 8px 0px 0px #000;
 }
-
-
 
 .boton-negro {
     background-color: #000;
@@ -463,8 +465,8 @@ a #flecha-volver {
     transition: all 300ms ease;
 }
 
-.btn-acordeon:checked ~ .contenido-acordeon {
-    max-height: 85px;
+.btn-acordeon:checked~.contenido-acordeon {
+    max-height: fit-content;
     padding: 30px;
 }
 
@@ -1323,13 +1325,17 @@ textarea {
     gap: 10%;
 
 }
- /*********MEDIA QUERIES / RESPONSIVE 600PX*********/
+
+/*********MEDIA QUERIES / RESPONSIVE 600PX*********/
 @media screen and (max-width:600px) {
 
-/*********nav*********/
-.ocultar-en-responsive{
-    display: none;
-}
+    /*********nav*********/
+    .img-909-reduccion {
+        background-color: #F3AB01;
+        padding: 8px;
+        border: 3px solid black;
+        box-shadow: 6px 6px 0px 0px #000;
+    }
 
 .img-909-reduccion{
     background-color: #F3AB01;
@@ -1402,37 +1408,175 @@ body {
 .ocultar-en-responsive {
         display: none;
     }
-  /*esta etiqueta ponganla a todo lo que quieran ocultar, yo por ej decidí sacar la imagen grande en las revistas y le puse esta class*/
 
-    
+    .menu-hamburguesa-svg {
+        cursor: pointer;
+    }
 
+    #check:checked+.desplegable {
+        height: fit-content;
+        width: 72%;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px 15px;
+        font-weight: 800;
+        background-color: #F3AB01;
+        max-width: fit-content;
+        border: 3px solid black;
+        box-shadow: 6px 6px 0px 0px #000;
+    }
+
+    .nav-mobile {
+        display: flex;
+        width: 72%;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .nav-mobile ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        position: absolute;
+        top: 47px;
+        left: 197px;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .nav-mobile a {
+        color: black;
+        font-size: 25px;
+        font-family: Lato;
+        padding: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    /*********footer*********/
+    footer {
+        padding: 30px 0px;
+    }
+
+    #iconos-contacto {
+        display: block;
+        display: flex;
+        gap: 20px;
+    }
+
+    #iconos-contacto img {
+        background-color: #F3AB01;
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+    .contenedor-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 14px 0px;
+    }
+
+    /*********general*********/
+
+    body {
+        margin: 30px;
+    }
+
+    .ocultar-en-responsive {
+        display: none;
+    }
+
+
+
+    /*esta etiqueta ponganla a todo lo que quieran ocultar, yo por ej decidí sacar la imagen grande en las revistas y le puse esta class*/
 
     /*********INDEX*********/
+    .index p {
+        font-size: 1.5rem;
+        line-height: 32px;
+    }
 
-.index {
-    display: flex;
-    flex-direction: column;
-}
+    .index h2 {
+        font-size: 4em;
+    }
 
-.inicioyedicion .recuadro-crema-negro{
-    background: none;
-}
+    .index h3 {
+        font-size: 1.3em;
+        line-height: 25px;
+    }
 
-.disco {
-    width: 300px;
-    height: 300px;
-}
+    /*inicio y disco*/
+    .inicioyedicion {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+    }
 
-.recuadro-crema-negro .logo-archivo img{
-    width: 350px;
-    background-color: #F3AB01;
-    padding: 0px 15px;
-    border: 8px solid #000;
-    box-shadow: 10px 13px 0px 0px #000;
+    .inicioyedicion .recuadro-crema-negro {
+        background: none;
+    }
 
-}
-    
+    .inicioyedicion ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    .disco {
+        width: 300px;
+        height: 300px;
+    }
+
+    .recuadro-crema-negro .logo-archivo img {
+        width: 350px;
+        background-color: #F3AB01;
+        padding: 0px 15px;
+        border: 5px solid #000;
+        box-shadow: 10px 13px 0px 0px #000;
+    }
+
+    .linea-punteada {
+        display: flex;
+        gap: 17px;
+        padding: 32px;
+    }
+
+    /*quienes somos*/
+    #quienes-somos .recuadro-crema-negro {
+        padding: 32px;
+    }
+
+    .contenedor-texto p {
+        max-width: fit-content;
+    }
+
+    /*preguntas frecuentes*/
+    .preguntas-frecuentes .recuadro-amarillo-negro {
+        padding: 32px;
+    }
+
+    .preguntasyrevistas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*nuestras revistas*/
+    #nuestras-revistas .recuadro-crema-negro {
+        padding: 32px;
+    }
+
+    /*club de la mesa*/
+    #mesa-redonda .recuadro-crema-negro {
+        padding: 32px;
+        width: fit-content;
+        height: fit-content;
+        background-size: 35%;
+        gap: 17px;
+    }
+
+    .contenedor-texto {
+        gap: 17px;
+    }
 
     /*********SUSCRIPCION*********/
 
@@ -1448,11 +1592,13 @@ body {
         font-size: 2rem;
         line-height: 40px;
     }
-    .page-revistas p{
+
+    .page-revistas p {
         font-size: 1.5rem;
         line-height: 35px;
-        
-    } 
+
+    }
+
     /*general*/
     .page-revistas {
         margin-left: 20px;
@@ -1465,7 +1611,7 @@ body {
         width: 590px;
         padding: 20px 0px;
     }
-    
+
     #contenedor-titulos {
         width: 80%;
         display: flex;
