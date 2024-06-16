@@ -78,6 +78,9 @@ p {
 
 
 /*nav*/
+.nav-mobile{
+    display: none;
+}
 
 header{
     padding: 30px 0px;
@@ -1329,6 +1332,69 @@ textarea {
 @media screen and (max-width:600px) {
 
 /*********nav*********/
+.ocultar-en-responsive{
+    display: none;
+}
+
+.img-909-reduccion{
+    background-color: #F3AB01;
+    padding: 8px;
+    border: 3px solid black;
+    box-shadow: 6px 6px 0px 0px #000;
+}
+
+#check{
+    display: none;
+}
+
+.menu-hamburguesa-svg{
+    cursor: pointer;
+}
+
+#check:checked + .desplegable{
+    height: 200px;
+    width: 72%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-mobile{
+    display: flex;
+    width: 72%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-mobile ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    top: 71px;
+    left: 111px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.nav-mobile li{
+    list-style: none;
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+}
+
+.nav-mobile a {
+    color: black;
+    font-size: 25px;
+    font-family: Lato;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+
+
+
+
 /*********footer*********/
 .contenedor-footer{
     display: flex;
