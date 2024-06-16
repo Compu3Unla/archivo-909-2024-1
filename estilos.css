@@ -79,6 +79,10 @@ p {
 
 /*nav*/
 
+header{
+    padding: 30px 0px;
+}
+
 .logo-amarillo {
     background-color: #F3AB01;
     border: 3px solid black;
@@ -327,6 +331,11 @@ a #flecha-volver {
 }
 
 /***********INDEX************/
+
+.logo-responsive {
+    display: none;
+}
+
 .index main {
     display: flex;
     flex-direction: column;
