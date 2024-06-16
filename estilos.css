@@ -97,10 +97,6 @@ p {
     box-shadow: 8px 8px 0px 0px #000;
 }
 
-header {
-    padding: 30px 0px;
-}
-
 .botonera {
     display: flex;
     width: 100%;
@@ -429,12 +425,39 @@ a #flecha-volver {
     gap: 30px;
 }
 
-.preguntas {
+/***before***/
+
+.acordeon {
+    background-color: #FFF;
     border: 3px solid #000;
+    max-width: 930px;
+}
+
+.acordeon label {
     background: #FFF1E3;
     padding: 25px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 30px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    max-width: 930px;
+}
+
+.acordeon .contenido-acordeon {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.btn-acordeon:checked ~ .contenido-acordeon {
+    max-height: 85px;
+    padding: 30px;
+}
+
+.btn-acordeon {
+    display: none;
 }
 
 .flecha-abajo {
@@ -461,6 +484,7 @@ a #flecha-volver {
     background-size: 60%;
     background-position: right bottom;
     background-repeat: no-repeat;
+    max-height: fit-content;
 }
 
 /*MESA REDONDA*/
@@ -478,7 +502,7 @@ a #flecha-volver {
     background-position: right bottom;
     background-repeat: no-repeat;
     height: 40vh;
-    width: 920px;
+    width: 930px;
 }
 
 .index .recuadro-crema-negro {
@@ -490,6 +514,11 @@ a #flecha-volver {
 }
 
 /*contacto-pop-up*/
+#ventana-contacto img {
+    background-color: #F3AB01;
+    padding: 20px 25px;
+    border-radius: 30px;
+}
 
 #ventana-contacto {
     display: flex;
@@ -499,18 +528,11 @@ a #flecha-volver {
     background: #000;
     box-shadow: 13px 13px 0px 0px #F3AB01;
     position: absolute;
-    right: 50px;
-    display: none;
+    opacity: 0;
 }
 
-#ventana-contacto img {
-    background-color: #F3AB01;
-    padding: 20px 25px;
-    border-radius: 30px;
-}
-
-#ventana-contacto::before {
-    display: block;
+#ventana-contacto:active {
+    opacity: 1;
 }
 
 /***********SUSCRIPCION************/
@@ -1294,11 +1316,11 @@ textarea {
     gap: 10%;
 
 }
- /***************************MEDIA QUERIES / RESPONSIVE 600PX********************/
+ /*********MEDIA QUERIES / RESPONSIVE 600PX*********/
 @media screen and (max-width:600px) {
 
-/**********************nav********************************/
-/**********************footer********************************/
+/*********nav*********/
+/*********footer*********/
 .contenedor-footer{
     display: flex;
     flex-direction: column;
@@ -1306,10 +1328,13 @@ textarea {
     align-items: center;
 
 }
-/***********************general********************************/
+/*********general*********/
 
+body {
+    margin: 30px;
+}
 
-    .ocultar-en-responsive {
+.ocultar-en-responsive {
         display: none;
     }
   /*esta etiqueta ponganla a todo lo que quieran ocultar, yo por ej decidí sacar la imagen grande en las revistas y le puse esta class*/
@@ -1317,15 +1342,38 @@ textarea {
     
 
 
-    /****************************************INDEX****************************************/
+    /*********INDEX*********/
+
+.index {
+    display: flex;
+    flex-direction: column;
+}
+
+.inicioyedicion .recuadro-crema-negro{
+    background: none;
+}
+
+.disco {
+    width: 300px;
+    height: 300px;
+}
+
+.recuadro-crema-negro .logo-archivo img{
+    width: 350px;
+    background-color: #F3AB01;
+    padding: 0px 15px;
+    border: 8px solid #000;
+    box-shadow: 10px 13px 0px 0px #000;
+
+}
+    
+
+
+    /*********SUSCRIPCION*********/
 
 
 
-    /****************************************SUSCRIPCION**********************************/
-
-
-
-    /****************************************REVISTAS**************************************/
+    /*********REVISTAS*********/
     /*tipografias*/
     .page-revistas h2 {
         font-size: 8rem
@@ -1362,7 +1410,6 @@ textarea {
         justify-content: space-evenly;
     }
 
-
     .contenedor-efecto-cartel {
         display: flex;
         align-items: stretch;
@@ -1397,7 +1444,7 @@ textarea {
     }
 
 
-    /***************************************EVENTOS**************************************/
+    /*********EVENTOS*********/
     .page-eventos {
         background-color: #F3AB01;
         margin-left: 20px;
