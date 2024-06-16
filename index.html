@@ -19,11 +19,6 @@
 
 <body class="index">
     <header>
-        <div class="logo-responsive">
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                <path d="M21.1667 17.1458C21.6322 17.1461 22.0797 17.3254 22.4166 17.6466C22.7535 17.9678 22.9538 18.4063 22.9762 18.8712C22.9986 19.3362 22.8412 19.7919 22.5367 20.144C22.2323 20.496 21.804 20.7175 21.3407 20.7624L21.1667 20.7708H1.83337C1.3679 20.7706 0.920364 20.5913 0.58349 20.2701C0.246617 19.9489 0.0462345 19.5104 0.0238655 19.0454C0.00149659 18.5805 0.158856 18.1248 0.463336 17.7727C0.767816 17.4206 1.19608 17.1992 1.65937 17.1543L1.83337 17.1458H21.1667ZM21.1667 8.6875C21.6474 8.6875 22.1084 8.87846 22.4483 9.21837C22.7882 9.55828 22.9792 10.0193 22.9792 10.5C22.9792 10.9807 22.7882 11.4417 22.4483 11.7816C22.1084 12.1215 21.6474 12.3125 21.1667 12.3125H1.83337C1.35267 12.3125 0.891653 12.1215 0.551743 11.7816C0.211833 11.4417 0.020874 10.9807 0.020874 10.5C0.020874 10.0193 0.211833 9.55828 0.551743 9.21837C0.891653 8.87846 1.35267 8.6875 1.83337 8.6875H21.1667ZM21.1667 0.229172C21.6474 0.229172 22.1084 0.420131 22.4483 0.760041C22.7882 1.09995 22.9792 1.56097 22.9792 2.04167C22.9792 2.52238 22.7882 2.98339 22.4483 3.3233C22.1084 3.66321 21.6474 3.85417 21.1667 3.85417H1.83337C1.35267 3.85417 0.891653 3.66321 0.551743 3.3233C0.211833 2.98339 0.020874 2.52238 0.020874 2.04167C0.020874 1.56097 0.211833 1.09995 0.551743 0.760041C0.891653 0.420131 1.35267 0.229172 1.83337 0.229172H21.1667Z" fill="black"/>
-              </svg>
-        </div>
         <div class="ocultar-en-responsive">
             <nav class="botonera">
                 <img class="logo-amarillo" src="img/svg/logo-archivo909.svg" alt="logo-archivo909" width="173px" height="28px">
@@ -57,7 +52,7 @@
             <!------INICIO------>
             <article class="inicioyedicion">
                 <div class="recuadro-crema-negro">
-                    <ul>
+                <ul>
                     <li class="logo-archivo">
                         <img src="img/svg/logo-archivo909.svg" width="685px" height="129px" alt="logo-archivo909">
                     </li>
@@ -89,7 +84,7 @@
                     <h2>¿QUIÉNES SOMOS?</h2>
                     <p>Ediciones de revistas inspiradas en las revistas de los 90’s y 00’s. Tratamos temas de cine, música, fotografía y filosofía, entrevistas a DJ’s y productores, compilados fotográficos en HD análisis de películas y series, debates filosóficos para todxs.</p>
                 </div>
-                <img src="img/index/telecamcas-inicio.png" width="495px" height="335px" alt="collage-tele-camara-cassette">
+                <img src="img/index/telecamcas-inicio.png" width="495px" height="335px" alt="collage-tele-camara-cassette" class="ocultar-en-responsive">
             </article>
         </section>
         <div class="preguntasyrevistas">
@@ -155,7 +150,7 @@
                 </article>
             </section>
             <!------IMAGEN CHICA------>
-            <section>
+            <section class="ocultar-en-responsive">
                 <img src="img/index/chica-inicio.png" width="549px" height="400px">
             </section>
         </div>
@@ -165,13 +160,22 @@
     </main>
     <!------FOOTER------>
     <footer>
+        <!--ESTA ES LA VENTANA POP UP DE CONTACTO-->
+
+        <!--
         <div id="ventana-contacto">
             <img src="img/svg/gmail.svg" width="120px" height="120px" alt="gmail"/>
             <img src="img/svg/spotify.svg" width="120px" height="120px" alt="spotify"/>
             <img src="img/svg/instagram.svg" width="120px" height="120px" alt="instagram"/>
         </div>
+        -->
         <div class="contenedor-footer">
             <img src="img/svg/logo-archivo909.svg" alt="imagen del logo" width="181px" height="30px">
+            <div id="iconos-contacto">
+                <a href="mailto:jjuli.martinez13@gmail.com"><img src="img/svg/gmail.svg" width="50px" height="50px" alt="gmail"/></a>
+                <a href="https://open.spotify.com/playlist/79h9jJSvbOd8Lm58S0jEX6?si=Z4iLPbDQTlqJsf5AECOsCg&nd=1&dlsi=792862c6f7f848a7" target="_blank"><img src="img/svg/spotify.svg" width="50px" height="50px" alt="spotify"/></a>
+                <a href="https://www.instagram.com/archivo909/" target="_blank"><img src="img/svg/instagram.svg" width="50px" height="50px" alt="instagram"/></a>
+            </div>
             <p class="ocultar-en-responsive">Copyright© 2024. Todos los derechos reservados.</p>
             <a id="contacto" class="ocultar-en-responsive">CONTACTO</a>
         </div>

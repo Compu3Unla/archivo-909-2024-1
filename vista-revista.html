@@ -20,15 +20,33 @@
 
 <body id="page-revista12">
     <header>
-        <nav class="botonera">
-            <img class="logo-amarillo" src="img/svg/logo-archivo909.svg" alt="logo-archivo909" width="173px" height="28px">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="suscripcion.html">Suscribite</a></li>
-                <li><a href="entretenimiento.html">Eventos</a></li>
-                <li><a href="revistas.html" class="active">Revistas</a></li>
+        <div class="ocultar-en-responsive">
+            <nav class="botonera">
+                <img class="logo-amarillo" src="img/svg/logo-archivo909.svg" alt="logo-archivo909" width="173px" height="28px">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="suscripcion.html">Suscribite</a></li>
+                    <li><a href="entretenimiento.html">Eventos</a></li>
+                    <li><a href="revistas.html">Revistas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="nav-mobile">
+            <img class="img-909-reduccion" src="img/svg/909-reduccion.svg" width="80x" height="53px" alt="logo">
+
+            <label for="check" class="check2">
+                <img class="menu-hamburguesa-svg" src="img/svg/menu-hamburguesa.svg" width="50px" height="50px" alt="menu-hamburguesa">
+            </label>
+            <input type="checkbox" id="check">
+
+            <ul class="desplegable">
+                <li ><a href="index.html" class="active">Inicio</a></li>
+                <li ><a href="suscripcion.html">Suscribite</a></li>
+                <li ><a href="entretenimiento.html">Eventos</a></li>
+                <li ><a href="revistas.html">Revistas</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <!------------------inicio main------------------>
     <main>
@@ -232,9 +250,13 @@
     <footer>
         <div class="contenedor-footer">
             <img src="img/svg/logo-archivo909.svg" alt="imagen del logo" width="181px" height="30px">
-
-            <p>Copyright© 2024. Todos los derechos reservados.</p>
-            <a>CONTACTO</a>
+            <div id="iconos-contacto">
+                <a href="mailto:jjuli.martinez13@gmail.com"><img src="img/svg/gmail.svg" width="50px" height="50px" alt="gmail"/></a>
+                <a href="https://open.spotify.com/playlist/79h9jJSvbOd8Lm58S0jEX6?si=Z4iLPbDQTlqJsf5AECOsCg&nd=1&dlsi=792862c6f7f848a7" target="_blank"><img src="img/svg/spotify.svg" width="50px" height="50px" alt="spotify"/></a>
+                <a href="https://www.instagram.com/archivo909/" target="_blank"><img src="img/svg/instagram.svg" width="50px" height="50px" alt="instagram"/></a>
+            </div>
+            <p class="ocultar-en-responsive">Copyright© 2024. Todos los derechos reservados.</p>
+            <a id="contacto" class="ocultar-en-responsive">CONTACTO</a>
         </div>
     </footer>
 </body>
