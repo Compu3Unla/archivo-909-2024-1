@@ -736,12 +736,12 @@ textarea {
 .sub-eventos {
     color: #FFF1E3;
     font-family: Lato;
-    font-size: 2.25rem;
+    font-size: 23px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    line-height: 1em;
+    line-height: 33px;
 }
 
 
@@ -751,11 +751,6 @@ textarea {
     padding-top: 3em;
 }
 
-.contenedor-main {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
 
 .recuadro-crema-negro-eventos {
     border: 3px solid #000;
@@ -1342,7 +1337,75 @@ textarea {
         box-shadow: 6px 6px 0px 0px #000;
     }
 
-    #check {
+.img-909-reduccion{
+    background-color: #F3AB01;
+    padding: 8px;
+    border: 3px solid black;
+    box-shadow: 6px 6px 0px 0px #000;
+}
+
+#check{
+    display: none;
+}
+
+.menu-hamburguesa-svg{
+    cursor: pointer;
+}
+
+#check:checked + .desplegable{
+    height: 220px;
+    width: 167px;
+    display: flex;
+    align-items: flex-end;
+    background-color: #F3AB01;
+    border: 3px solid black;
+    left: 397px;
+    top: 108px;
+}
+
+.nav-mobile{
+    display: flex;
+    justify-content: space-between;
+    position: static;
+}
+
+.nav-mobile ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 71px;
+    left: 111px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.nav-mobile a {
+    color: black;
+    font-size: 41px;
+    font-family: 'Bebas Neue';
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/*********footer*********/
+.contenedor-footer{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+
+}
+/*********general*********/
+
+body {
+    margin: 30px;
+}
+
+.ocultar-en-responsive {
         display: none;
     }
 
@@ -1596,31 +1659,29 @@ textarea {
     .page-eventos {
         background-color: #F3AB01;
         margin-left: 20px;
-        margin-right: 7.5rem;
     }
 
-    .contenedor-main {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
+    .img-clip-eventos{
+        display: none;
+    }
+
+    .contenedor-titulos-eventos {
+        padding-bottom: 20px;
     }
 
     .contenedor-h3 {
-        background-color: #000;
-        height: 47px;
-        display: flex;
-        padding: 6px;
+        height: 114px;
+        padding: 19px 18px;    
     }
 
     .sub-eventos {
         color: #FFF1E3;
         font-family: Lato;
-        font-size: 15px;
+        font-size: 30px;
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
         text-transform: uppercase;
-        line-height: 20px;
+        line-height: 35px;
     }
 
     .img-clip-eventos {
@@ -1629,42 +1690,49 @@ textarea {
     }
 
     .contenedor-h2-eventos {
-        width: 59%;
+        width: 100%;
+        padding-bottom: 20px;
     }
 
-    h2 {
-        font-size: 2rem;
+    .h2-eventos {
+        color: #000;
+        font-family: "Bebas Neue";
+        font-size: 7rem;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
         line-height: 1em;
     }
 
-    h3 {
-        font-size: .8em;
-        line-height: 16px;
+    .h3-eventos {
+        color: #000;
+        font-family: Lato;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 39px;
     }
 
     #ferias {
-        display: flex;
-        flex-direction: column;
+        padding-top: 1em;
     }
 
     .contenedor-main {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
+        gap: 15px
     }
 
     .recuadro-crema-negro-eventos {
         border: 3px solid #000;
         background: var(--Cremita, #FFF1E3);
-        box-shadow: 10px 13px 0px 0px #000;
-        padding: 15px
+        box-shadow: 5px 5px 0px 0px #000;
+        padding: 22px
     }
 
     #contenedores-ferias {
         display: flex;
         flex-direction: column;
-        gap: 31px;
-        width: 57%;
+        gap: 2em;
     }
 
     .titulo-feria {
@@ -1672,7 +1740,6 @@ textarea {
         box-shadow: 7px 8px 0px 0px #000;
         width: fit-content;
         padding: 8px;
-        width: 85%;
     }
 
     .foto-evento {
@@ -1685,9 +1752,9 @@ textarea {
         gap: 10px;
     }
 
-    p {
-        font-size: 1.5em;
-        line-height: 25px;
+    .page-eventos p{
+        font-size: 27px;
+        line-height: 36px;
     }
 
     .sobre-feria {
@@ -1708,12 +1775,34 @@ textarea {
         text-transform: uppercase;
     }
 
+    .info-feria{
+        gap: 0px;
+    }
+
     .contenedor-info-feria {
         display: flex;
         padding-top: 25px;
-        gap: 10px;
+        gap: 27px;
         flex-wrap: wrap;
         flex-direction: column-reverse;
+    }
+
+    .foto-evento{
+        width: 300px;
+        height: 300px;
+    }
+
+    .h6-eventos{
+        font-size: 2rem;
+    }
+
+    .svg-insta-eventos{
+        width: 50px;
+        height: 50px;
+    }
+
+    .flecha-arriba{
+        display: none;
     }
 
 }
