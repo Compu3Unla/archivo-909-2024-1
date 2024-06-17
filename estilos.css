@@ -88,7 +88,7 @@ header {
 .logo-amarillo {
     background-color: #F3AB01;
     border: 3px solid black;
-    padding: 0.5em;
+    padding: 8px;
     position: relative;
     top: 20px;
     box-shadow: 8px 8px 0px 0px #000;
@@ -97,7 +97,7 @@ header {
 .logo-blanco {
     background-color: #ffffff;
     border: 3px solid black;
-    padding: 0.5em;
+    padding: 8px;
     position: relative;
     top: 20px;
     box-shadow: 8px 8px 0px 0px #000;
@@ -114,7 +114,7 @@ header {
 .botonera a {
     color: black;
     padding: 10px 15px;
-    padding: 0.5rem;
+    padding: 8px;
     transition: all 0.1s ease;
 }
 
@@ -122,8 +122,8 @@ header {
     /*boton mas grande estando en el html clickeado*/
     font-size: 1.5rem;
     font-family: Lato;
-    padding: 0.5rem;
-    border-radius: 0.6rem 0.6rem 0rem 0rem;
+    padding: 8px;
+    border-radius: 9.6px 9.6px 0px 0px;
 }
 
 .botonera ul {
@@ -179,11 +179,15 @@ footer a {
     border-radius: 10px;
 }
 
+#iconos-contacto img:hover {
+    background-color: #FFF1E3;
+}
+
 /***********fondos***********/
 body {
     background-color: #FFF1E3;
-    margin-left: 7.5rem;
-    margin-right: 7.5rem;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 .page-eventos,
@@ -210,9 +214,9 @@ button {
     height: fit-content;
     justify-content: center;
     align-items: center;
-    border-radius: 3.75rem;
+    border-radius:60px;
     background: #000;
-    padding: 1.25rem;
+    padding: 30px;
 }
 
 .flechas {
@@ -295,7 +299,7 @@ a #flecha-volver {
     padding: 10px;
     display: flex;
     justify-content: center;
-    gap: 2.9375rem;
+    gap: 48px;
     border-radius: 0.5625rem;
     border: 3px solid #000;
     background: #F3AB01;
@@ -306,19 +310,11 @@ a #flecha-volver {
     font-size: 2.5rem;
 }
 
-.boton-amarillo-grande:hover {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 2.9375rem;
-    border-radius: 0.5625rem;
+.boton-amarillo-chico:hover, .boton-amarillo-grande:hover {
     border: 3px solid #000;
     background: #000;
     box-shadow: 9px 9px 0px 0px #F3AB01;
     color: #F3AB01;
-    text-align: center;
-    font-family: "Bebas Neue";
-    font-size: 2.5rem;
 }
 
 
@@ -478,6 +474,13 @@ a #flecha-volver {
     padding: 5px;
 }
 
+
+.flecha-abajo:hover {
+    background-color: #ffffff;
+    border: 3px solid #F3AB01;
+    padding: 5px;
+}
+
 .preguntasyrevistas {
     display: flex;
     flex-direction: row;
@@ -543,8 +546,8 @@ a #flecha-volver {
     background-position: center;
     border: 3px solid #000;
     box-shadow: 13px 13px 0px 0px #000;
-    height: 50vh;
-    margin: 50px 0;
+    height: 56vh;
+    margin: 20px 0;
 }
 
 .iconos-pago {
@@ -590,7 +593,7 @@ a #flecha-volver {
 
 .contenedor-contacto {
     display: flex;
-    padding: 2rem;
+    padding: 30px;
     flex-direction: column;
     background: #000;
     box-shadow: 13px 13px 0px 0px #F3AB01;
@@ -615,7 +618,6 @@ a #flecha-volver {
     font-style: normal;
     font-weight: 400;
     line-height: 101%;
-    /* 3.24981rem */
     text-transform: uppercase;
 }
 
@@ -627,13 +629,11 @@ a #flecha-volver {
     font-style: normal;
     font-weight: 700;
     line-height: 132%;
-    /* 1.76969rem */
     text-transform: uppercase;
 }
 
 .recuadro-crema-negro-susc {
     border: 3px solid #000;
-    ;
     box-shadow: 13px 13px 0px 0px #000;
     display: flex;
     flex-direction: column;
@@ -867,7 +867,7 @@ textarea {
     /*revistas en conjunto*/
     display: flex;
     width: 100%;
-    padding: 2.5rem 0rem;
+    padding: 40px 0px;
     justify-content: space-evenly;
     gap: 6rem 10rem;
     flex-wrap: wrap;
@@ -964,8 +964,8 @@ textarea {
     top: 0px;
     left: -11%;
     transform: translateX(50%);
-    width: 543px;
-    height: 750px;
+    width: 545px;
+    height: 752px;
     background-size: cover;
     background-position: center;
     z-index: 10;
@@ -1120,7 +1120,7 @@ textarea {
     border: #000 3px solid;
     background-color: #FFF1E3;
     box-shadow: 9px 9px 0px 0px;
-    padding: 2rem;
+    padding: 48px;
     width: 47%;
     display: flex;
     gap: 1rem;
@@ -1161,7 +1161,7 @@ textarea {
     align-items: center;
     border-radius: 3.75rem;
     background: #000;
-    padding: 1.25rem;
+    padding: 20px;
 }
 
 .contenedor-botonera {
@@ -1178,7 +1178,7 @@ textarea {
     background: var(--Cremita, #FFF1E3);
     box-shadow: 13px 13px 0px 0px #000;
     height: fit-content;
-    padding: 3rem;
+    padding: 48px;
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -1621,7 +1621,7 @@ body {
     /*********REVISTAS*********/
     /*tipografias*/
     .page-revistas h2 {
-        font-size: 8rem
+        font-size: 4rem
     }
 
     .page-revistas h3 {
@@ -1631,7 +1631,7 @@ body {
 
     .page-revistas p {
         font-size: 1.5rem;
-        line-height: 35px;
+        line-height: 32px;
 
     }
 
@@ -1644,22 +1644,23 @@ body {
     }
 
     #intro-revistas {
-        width: 590px;
-        padding: 20px 0px;
+        padding: 0px;
+        height: 580px;
+        width: 600px;
     }
 
     #contenedor-titulos {
         width: 80%;
         display: flex;
-        height: 44vh;
-        padding: 20px 20px;
+        height: 22vh;
+        /* padding: 20px 20px; */
         flex-direction: column;
         justify-content: space-evenly;
     }
-
+    
     .contenedor-efecto-cartel {
         display: flex;
-        align-items: stretch;
+        align-content: stretch;
         padding: 20px 0px;
     }
 
@@ -1671,13 +1672,19 @@ body {
     #cartel-exclamacion-hover {
         opacity: 1;
         padding: 42px;
+        height: 8.2vh;
+    }
+
+
+    #boton-signo-exclamacion {
+        height: 16vh;
     }
 
     #contenedor-catálogo {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-        padding: 1.5rem 0rem;
+        padding: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
