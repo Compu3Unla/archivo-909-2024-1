@@ -425,6 +425,7 @@ a #flecha-volver {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    max-width: 500px;
 }
 
 /*PREGUNTAS FRECUENTES*/
@@ -726,22 +727,17 @@ textarea {
 }
 
 .contenedor-h3 {
-    background-color: #000;
-    height: 58px;
+    height: 55px;
+    background-color: black;
+    padding: 19px 18px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 25px;
 }
 
 .sub-eventos {
     color: #FFF1E3;
     font-family: Lato;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    line-height: 33px;
 }
 
 
@@ -1373,18 +1369,6 @@ textarea {
     text-transform: uppercase;
 }
 
-
-
-
-
-/*********footer*********/
-.contenedor-footer{
-    display: flex;
-    flex-direction: column;
-    flex-direction: column;
-    align-items: center;
-
-}
 /*********general*********/
 
 body {
@@ -1436,6 +1420,13 @@ body {
     }
 
     /*********footer*********/
+    .contenedor-footer{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*********footer*********/
     footer {
         padding: 30px 0px;
     }
@@ -1467,11 +1458,8 @@ body {
 
     .ocultar-en-responsive {
         display: none;
-    }
+    } /*esta etiqueta ponganla a todo lo que quieran ocultar, yo por ej decidí sacar la imagen grande en las revistas y le puse esta class*/
 
-
-
-    /*esta etiqueta ponganla a todo lo que quieran ocultar, yo por ej decidí sacar la imagen grande en las revistas y le puse esta class*/
 
     /*********INDEX*********/
     .index p {
@@ -1497,6 +1485,8 @@ body {
 
     .inicioyedicion .recuadro-crema-negro {
         background: none;
+        max-width: 540px;
+        justify-content: center;
     }
 
     .inicioyedicion ul {
@@ -1544,6 +1534,10 @@ body {
     }
 
     /*nuestras revistas*/
+    #nuestras-revistas{
+        width: 540px;
+    }
+
     #nuestras-revistas .recuadro-crema-negro {
         padding: 32px;
     }
@@ -1699,18 +1693,19 @@ body {
     }
 
     .contenedor-h3 {
-        height: 114px;
-        padding: 19px 18px;    
+        height: 54px;
+        padding: 19px 18px;
+        background-color: black; 
     }
 
     .sub-eventos {
         color: #FFF1E3;
         font-family: Lato;
-        font-size: 30px;
+        font-size: 1.3em;
         font-style: normal;
         font-weight: 700;
         text-transform: uppercase;
-        line-height: 35px;
+        line-height: 25px;
     }
 
     .img-clip-eventos {
@@ -1726,7 +1721,7 @@ body {
     .h2-eventos {
         color: #000;
         font-family: "Bebas Neue";
-        font-size: 7rem;
+        font-size: 4em;
         font-style: normal;
         font-weight: 400;
         text-transform: uppercase;
@@ -1736,11 +1731,11 @@ body {
     .h3-eventos {
         color: #000;
         font-family: Lato;
-        font-size: 30px;
         font-style: normal;
+        font-size: 1.3em;
+        line-height: 25px;
         font-weight: 700;
         text-transform: uppercase;
-        line-height: 39px;
     }
 
     #ferias {
@@ -1782,8 +1777,8 @@ body {
     }
 
     .page-eventos p{
-        font-size: 27px;
-        line-height: 36px;
+        font-size: 1.5rem;
+        line-height: 32px;
     }
 
     .sobre-feria {
