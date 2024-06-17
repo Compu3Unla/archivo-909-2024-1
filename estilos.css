@@ -1329,20 +1329,7 @@ textarea {
 /*********MEDIA QUERIES / RESPONSIVE 600PX*********/
 @media screen and (max-width:600px) {
 
-    /*********nav*********/
-    .img-909-reduccion {
-        background-color: #F3AB01;
-        padding: 8px;
-        border: 3px solid black;
-        box-shadow: 6px 6px 0px 0px #000;
-    }
-
-.img-909-reduccion{
-    background-color: #F3AB01;
-    padding: 8px;
-    border: 3px solid black;
-    box-shadow: 6px 6px 0px 0px #000;
-}
+/*********nav*********/
 
 #check{
     display: none;
@@ -1359,8 +1346,7 @@ textarea {
     align-items: flex-end;
     background-color: #F3AB01;
     border: 3px solid black;
-    left: 397px;
-    top: 108px;
+    left: 0px;
 }
 
 .nav-mobile{
@@ -1415,11 +1401,9 @@ body {
 
     #check:checked+.desplegable {
         height: fit-content;
-        width: 72%;
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         padding: 20px 15px;
-        font-weight: 800;
         background-color: #F3AB01;
         max-width: fit-content;
         border: 3px solid black;
@@ -1435,7 +1419,7 @@ body {
     .nav-mobile ul {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 5px;
         position: absolute;
         top: 47px;
         left: 197px;
@@ -1445,8 +1429,8 @@ body {
 
     .nav-mobile a {
         color: black;
-        font-size: 25px;
-        font-family: Lato;
+        font-size: 46px;
+        font-family: 'Bebas Neue';
         padding: 0.5rem;
         text-transform: uppercase;
     }
