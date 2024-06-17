@@ -659,7 +659,7 @@ a #flecha-volver {
     width: 800px;
     height: 300px;
     background-image: url(img/svg/puntos-negro.svg);
-    background-position: right;
+    background-position: 400px 0;
     background-repeat: no-repeat;
 }
 
@@ -1579,7 +1579,53 @@ body {
     }
 
     /*********SUSCRIPCION*********/
+    .iconos-pago {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
 
+    .logos {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    #se-parte {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .recuadro-crema-negro-susc {
+        max-width: 494px;
+    }
+
+    #descripcion-club {
+        max-width: 540px;
+        gap: 50px;
+    }
+
+    .contacto {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .compu img {
+        display: none;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .enviar {
+        max-width: 100%;
+    }
+
+    .suscribite p {
+        font-size: 1.5rem;
+        line-height: 32px;
+    }
 
 
     /*********REVISTAS*********/
