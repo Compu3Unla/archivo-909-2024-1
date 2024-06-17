@@ -1,7 +1,5 @@
 # TP Grupal - G2 / Preentrega #
-Somos el grupo 2! Nos tocó la temática de emprendimientos y ante esta premisa, elegimos el emprendimiento de una revista independiente llamada "Archivo 909". 
-
-Trabajamos en rediseñar la página de un emprendimiento llamado ‘Archivo 909’,  la misma está inspirada en los 90’s y en toda su visualidad gráfica, donde te podés suscribir comprando la revista que es lanzada mes a mes, y acceder a recomendaciones de música, arte, cine, diseño). Le dimos una nueva estética y corregimos muchos errores visuales de comunicación y también de navegación web.
+Somos el grupo 2! Nos tocó la temática de emprendimientos y ante esta premisa, elegimos el emprendimiento de una revista independiente llamada "Archivo 909" para rediseñar su web, la misma está inspirada en los 90’s y en toda su visualidad gráfica, donde te podés suscribir comprando la revista que es lanzada mes a mes, y acceder a recomendaciones de música, arte, cine, diseño). Le dimos una nueva estética y corregimos muchos errores visuales de comunicación y también de navegación web.
 
 ## Integrantes ##
 
