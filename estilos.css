@@ -1428,7 +1428,6 @@ body {
 
     .nav-mobile {
         display: flex;
-        width: 72%;
         justify-content: space-between;
         position: relative;
     }
