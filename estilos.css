@@ -975,12 +975,14 @@ textarea {
 #hover-miniatura1:hover ~ #hover-container {
     display: block;
     background-image: url('img/revista/galeria-hover-1.jp.jpg');
+    border: 1px solid #000;
 }
 
 
 #hover-miniatura2:hover ~ #hover-container {
     display: block;
     background-image: url('img/revista/galeria-hover-2.jpg');
+    border: 1px solid #000;
 }
 
 /*contenedor de edicion y detalles*/
