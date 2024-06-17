@@ -939,7 +939,9 @@ textarea {
     justify-content: center;
     gap: 30px;
     width: 50%;
+    position: relative; 
 }
+
 
 #thumbnails-columna {
     display: flex;
@@ -956,6 +958,30 @@ textarea {
     cursor: pointer;
 }
 
+/* Contenedor para la imagen de hover */
+#hover-container {
+    position: absolute;
+    top: 0px;
+    left: -11%;
+    transform: translateX(50%);
+    width: 543px;
+    height: 750px;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+/* cambia la imagen de fondo al hacer hover */
+#hover-miniatura1:hover ~ #hover-container {
+    display: block;
+    background-image: url('img/revista/galeria-hover-1.jp.jpg');
+}
+
+
+#hover-miniatura2:hover ~ #hover-container {
+    display: block;
+    background-image: url('img/revista/galeria-hover-2.jpg');
+}
 
 /*contenedor de edicion y detalles*/
 #detalles-edición {
