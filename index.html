@@ -18,24 +18,41 @@
 
 
 <body class="index">
+<!------nav-DESKTOP------>
     <header>
-        <nav class="botonera">
-            <img class="logo-amarillo" src="img/svg/logo-archivo909.svg" alt="logo-archivo909" width="173px" height="28px">
-            <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="suscripcion.html">Suscribite</a></li>
-                <li><a href="entretenimiento.html">Eventos</a></li>
-                <li><a href="revistas.html">Revistas</a></li>
+        <div class="ocultar-en-responsive">
+            <nav class="botonera">
+                <img class="logo-amarillo" src="img/svg/logo-archivo909.svg" alt="logo-archivo909" width="173px" height="28px">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="suscripcion.html">Suscribite</a></li>
+                    <li><a href="entretenimiento.html">Eventos</a></li>
+                    <li><a href="revistas.html">Revistas</a></li>
+                </ul>
+            </nav>
+        </div>
+<!------nav-CELULAR------>
+        <div class="nav-mobile">
+            <label for="check" class="check2">
+                <img class="menu-hamburguesa-svg" src="img/svg/menu-hamburguesa.svg" width="50px" height="50px" alt="menu-hamburguesa">
+            </label>
+            <input type="checkbox" id="check">
+
+            <ul class="desplegable">
+                <li ><a href="index.html" class="active">Inicio</a></li>
+                <li ><a href="suscripcion.html">Suscribite</a></li>
+                <li ><a href="entretenimiento.html">Eventos</a></li>
+                <li ><a href="revistas.html">Revistas</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main>
         <section>
             <!------INICIO------>
             <article class="inicioyedicion">
                 <div class="recuadro-crema-negro">
-                    <ul>
-                    <li>
+                <ul>
+                    <li class="logo-archivo">
                         <img src="img/svg/logo-archivo909.svg" width="685px" height="129px" alt="logo-archivo909">
                     </li>
                     <li>
@@ -66,7 +83,7 @@
                     <h2>¿QUIÉNES SOMOS?</h2>
                     <p>Ediciones de revistas inspiradas en las revistas de los 90’s y 00’s. Tratamos temas de cine, música, fotografía y filosofía, entrevistas a DJ’s y productores, compilados fotográficos en HD análisis de películas y series, debates filosóficos para todxs.</p>
                 </div>
-                <img src="img/index/telecamcas-inicio.png" width="495px" height="335px" alt="collage-tele-camara-cassette">
+                <img src="img/index/telecamcas-inicio.png" width="495px" height="335px" alt="collage-tele-camara-cassette" class="ocultar-en-responsive">
             </article>
         </section>
         <div class="preguntasyrevistas">
@@ -74,17 +91,38 @@
             <section class="preguntas-frecuentes">
                 <article class="recuadro-amarillo-negro">
                     <h2>PREGUNTAS FRECUENTES</h2>
-                    <div class="preguntas">
-                        <h3>¿Cómo consigo la revista?</h3>
-                        <img class="flecha-abajo" src="img/svg/flecha-abajo.svg" width="21px" height="32px" alt="flecha-abajo">
+                    <div class="acordeon">
+                        <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+                        <label for="btn-acordeon1">
+                         <h3>¿Cómo consigo la revista?</h3>
+                        <img class="flecha-abajo" src="img/svg/flecha-abajo.svg" width="21px" height="32px" alt="flecha-abajo">   
+                        </label>
+                        <div class="contenido-acordeon">
+                            <p>Podés ir a la sección suscribirme. Encontrá la tabla de contenido de cada edición en nuestro Instagram para saber cuál pedir. Pronto subiremos las tablas de contenidos al sitio para que las tengas disponibles.
+                            </p>
+                        </div>
                     </div>
-                    <div class="preguntas">
-                        <h3>¿La revista es digital o física?</h3>
-                        <img class="flecha-abajo" src="img/svg/flecha-abajo.svg" width="21px" height="32px" alt="flecha-abajo">
+                    <div class="acordeon">
+                        <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                        <label for="btn-acordeon2">
+                         <h3>¿La revista es digital o física?</h3>
+                        <img class="flecha-abajo" src="img/svg/flecha-abajo.svg" width="21px" height="32px" alt="flecha-abajo">   
+                        </label>
+                        <div class="contenido-acordeon">
+                            <p>La revista es digital, en nuestra web disponemos de todos nuestros archivos mediante la suscripción a la misma pero también podes pedirla impresa.
+                            </p>
+                        </div>
                     </div>
-                    <div class="preguntas">
-                        <h3>¿Qué beneficios obtengo al suscribirme?</h3>
-                        <img class="flecha-abajo" src="img/svg/flecha-abajo.svg"width="21px" height="32px" alt="flecha-abajo">
+                    <div class="acordeon">
+                        <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                        <label for="btn-acordeon3">
+                         <h3>¿Qué beneficios obtengo al suscribirme?</h3>
+                        <img class="flecha-abajo" src="img/svg/flecha-abajo.svg" width="21px" height="32px" alt="flecha-abajo">   
+                        </label>
+                        <div class="contenido-acordeon">
+                            <p>Con tu suscripción podrán acceder a nuestro “Club de la Mesa Redonda”, donde podrás ver mes a mes recomendaciones nuevas de música, cine, cultura, etc. También tendrás acceso a las revistas durante el tiempo que te suscribas!
+                            </p>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -111,7 +149,7 @@
                 </article>
             </section>
             <!------IMAGEN CHICA------>
-            <section>
+            <section class="ocultar-en-responsive">
                 <img src="img/index/chica-inicio.png" width="549px" height="400px">
             </section>
         </div>
@@ -121,15 +159,14 @@
     </main>
     <!------FOOTER------>
     <footer>
-        <div id="ventana-contacto">
-            <img src="img/svg/gmail.svg" width="120px" height="120px" alt="gmail"/>
-            <img src="img/svg/spotify.svg" width="120px" height="120px" alt="spotify"/>
-            <img src="img/svg/instagram.svg" width="120px" height="120px" alt="instagram"/>
-        </div>
         <div class="contenedor-footer">
             <img src="img/svg/logo-archivo909.svg" alt="imagen del logo" width="181px" height="30px">
-            <p>Copyright© 2024. Todos los derechos reservados.</p>
-            <a href="#ventana-contacto">CONTACTO</a>
+            <p class="ocultar-en-responsive">Copyright© 2024. Todos los derechos reservados.</p>
+            <div id="iconos-contacto">
+                <a href="mailto:jjuli.martinez13@gmail.com"><img src="img/svg/gmail.svg" width="50px" height="50px" alt="gmail"/></a>
+                <a href="https://open.spotify.com/playlist/79h9jJSvbOd8Lm58S0jEX6?si=Z4iLPbDQTlqJsf5AECOsCg&nd=1&dlsi=792862c6f7f848a7" target="_blank"><img src="img/svg/spotify.svg" width="50px" height="50px" alt="spotify"/></a>
+                <a href="https://www.instagram.com/archivo909/" target="_blank"><img src="img/svg/instagram.svg" width="50px" height="50px" alt="instagram"/></a>
+            </div>
         </div>
     </footer>
 </body>

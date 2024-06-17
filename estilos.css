@@ -76,8 +76,14 @@ p {
     font-weight: 400;
 }
 
-
 /*nav*/
+.nav-mobile {
+    display: none;
+}
+
+header {
+    padding: 30px 0px;
+}
 
 .logo-amarillo {
     background-color: #F3AB01;
@@ -95,10 +101,6 @@ p {
     position: relative;
     top: 20px;
     box-shadow: 8px 8px 0px 0px #000;
-}
-
-header {
-    padding: 30px 0px;
 }
 
 .botonera {
@@ -124,14 +126,12 @@ header {
     border-radius: 0.6rem 0.6rem 0rem 0rem;
 }
 
-
 .botonera ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     gap: 3em;
 }
-
 
 .botonera ul li {
     stroke-width: 3px;
@@ -147,7 +147,6 @@ header {
     border-radius: 10px 10px 0px 0px;
 }
 
-
 /*footer*/
 footer {
     padding: 60px 0px;
@@ -162,13 +161,23 @@ footer a {
     border: #000 3px solid;
     background: #FFF;
     width: 100%;
-    padding: 1.25rem 0rem;
+    padding: 13px 0px;
     align-items: center;
     justify-content: space-around;
     font-family: "Bebas Neue";
     font-size: 2rem;
 }
 
+#iconos-contacto {
+    display: flex;
+    gap: 20px;
+}
+
+#iconos-contacto img {
+    background-color: #F3AB01;
+    padding: 7px;
+    border-radius: 10px;
+}
 
 /***********fondos***********/
 body {
@@ -177,12 +186,10 @@ body {
     margin-right: 7.5rem;
 }
 
-
 .page-eventos,
 .page-club1 {
     background-color: #F3AB01;
 }
-
 
 /***********class***********/
 button {
@@ -197,7 +204,6 @@ button {
     padding: 2rem;
 }
 
-
 .amarrilo-contenedornegro {
     display: flex;
     width: auto;
@@ -208,7 +214,6 @@ button {
     background: #000;
     padding: 1.25rem;
 }
-
 
 .flechas {
     background: #F3AB01;
@@ -265,8 +270,6 @@ a #flecha-volver {
     height: fit-content;
     box-shadow: 8px 8px 0px 0px #000;
 }
-
-
 
 .boton-negro {
     background-color: #000;
@@ -331,6 +334,11 @@ a #flecha-volver {
 }
 
 /***********INDEX************/
+
+.logo-responsive {
+    display: none;
+}
+
 .index main {
     display: flex;
     flex-direction: column;
@@ -411,7 +419,7 @@ a #flecha-volver {
     max-width: 70%;
 }
 
-.contenedor-texto {
+#quienes-somos .contenedor-texto {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -429,12 +437,39 @@ a #flecha-volver {
     gap: 30px;
 }
 
-.preguntas {
+/***before***/
+
+.acordeon {
+    background-color: #FFF;
     border: 3px solid #000;
+    max-width: 930px;
+}
+
+.acordeon label {
     background: #FFF1E3;
     padding: 25px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 30px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    max-width: 930px;
+}
+
+.acordeon .contenido-acordeon {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.btn-acordeon:checked~.contenido-acordeon {
+    max-height: fit-content;
+    padding: 30px;
+}
+
+.btn-acordeon {
+    display: none;
 }
 
 .flecha-abajo {
@@ -461,6 +496,7 @@ a #flecha-volver {
     background-size: 60%;
     background-position: right bottom;
     background-repeat: no-repeat;
+    max-height: fit-content;
 }
 
 /*MESA REDONDA*/
@@ -478,7 +514,14 @@ a #flecha-volver {
     background-position: right bottom;
     background-repeat: no-repeat;
     height: 40vh;
-    width: 920px;
+    width: 930px;
+}
+
+#mesa-redonda .contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 440px;
 }
 
 .index .recuadro-crema-negro {
@@ -487,30 +530,6 @@ a #flecha-volver {
     align-items: flex-start;
     justify-content: space-between;
     padding: 50px;
-}
-
-/*contacto-pop-up*/
-
-#ventana-contacto {
-    display: flex;
-    gap: 35px;
-    padding: 50px;
-    max-width: fit-content;
-    background: #000;
-    box-shadow: 13px 13px 0px 0px #F3AB01;
-    position: absolute;
-    right: 50px;
-    display: none;
-}
-
-#ventana-contacto img {
-    background-color: #F3AB01;
-    padding: 20px 25px;
-    border-radius: 30px;
-}
-
-#ventana-contacto::before {
-    display: block;
 }
 
 /***********SUSCRIPCION************/
@@ -623,7 +642,7 @@ a #flecha-volver {
     width: 800px;
     height: 300px;
     background-image: url(img/svg/puntos-negro.svg);
-    background-position: right;
+    background-position: 400px 0;
     background-repeat: no-repeat;
 }
 
@@ -690,22 +709,17 @@ textarea {
 }
 
 .contenedor-h3 {
-    background-color: #000;
-    height: 58px;
+    height: 55px;
+    background-color: black;
+    padding: 19px 18px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 25px;
 }
 
 .sub-eventos {
     color: #FFF1E3;
     font-family: Lato;
-    font-size: 2.25rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    line-height: 1em;
 }
 
 
@@ -715,11 +729,6 @@ textarea {
     padding-top: 3em;
 }
 
-.contenedor-main {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
 
 .recuadro-crema-negro-eventos {
     border: 3px solid #000;
@@ -1294,38 +1303,294 @@ textarea {
     gap: 10%;
 
 }
- /***************************MEDIA QUERIES / RESPONSIVE 600PX********************/
+
+/*********MEDIA QUERIES / RESPONSIVE 600PX*********/
 @media screen and (max-width:600px) {
 
-/**********************nav********************************/
-/**********************footer********************************/
-.contenedor-footer{
+/*********nav*********/
+
+#check{
+    display: none;
+}
+
+.menu-hamburguesa-svg{
+    cursor: pointer;
+}
+
+#check:checked + .desplegable{
+    height: 220px;
+    width: 167px;
+    display: flex;
+    align-items: flex-end;
+    background-color: #F3AB01;
+    border: 3px solid black;
+    left: 0px;
+}
+
+.nav-mobile{
+    display: flex;
+    justify-content: space-between;
+    position: static;
+}
+
+.nav-mobile ul{
     display: flex;
     flex-direction: column;
-    flex-direction: column;
-    align-items: center;
-
+    position: absolute;
+    top: 71px;
+    left: 111px;
+    height: 0px;
+    overflow: hidden;
 }
-/***********************general********************************/
 
+.nav-mobile a {
+    color: black;
+    font-size: 41px;
+    font-family: 'Bebas Neue';
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+/*********general*********/
+
+body {
+    margin: 30px;
+}
+
+.ocultar-en-responsive {
+        display: none;
+    }
+
+    .menu-hamburguesa-svg {
+        cursor: pointer;
+    }
+
+    #check:checked+.desplegable {
+        height: fit-content;
+        display: flex;
+        align-items: flex-start;
+        padding: 20px 15px;
+        background-color: #F3AB01;
+        max-width: fit-content;
+        border: 3px solid black;
+        box-shadow: 6px 6px 0px 0px #000;
+    }
+
+    .nav-mobile {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .nav-mobile ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: absolute;
+        top: 47px;
+        left: 197px;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .nav-mobile a {
+        color: black;
+        font-size: 46px;
+        font-family: 'Bebas Neue';
+        padding: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    /*********footer*********/
+    .contenedor-footer{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*********footer*********/
+    footer {
+        padding: 30px 0px;
+    }
+
+    #iconos-contacto {
+        display: block;
+        display: flex;
+        gap: 20px;
+    }
+
+    #iconos-contacto img {
+        background-color: #F3AB01;
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+    .contenedor-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 14px 0px;
+    }
+
+    /*********general*********/
+
+    body {
+        margin: 30px;
+    }
 
     .ocultar-en-responsive {
         display: none;
+    } /*esta etiqueta ponganla a todo lo que quieran ocultar, yo por ej decidí sacar la imagen grande en las revistas y le puse esta class*/
+
+
+    /*********INDEX*********/
+    .index p {
+        font-size: 1.5rem;
+        line-height: 32px;
     }
-  /*esta etiqueta ponganla a todo lo que quieran ocultar, yo por ej decidí sacar la imagen grande en las revistas y le puse esta class*/
 
-    
+    .index h2 {
+        font-size: 4em;
+    }
+
+    .index h3 {
+        font-size: 1.3em;
+        line-height: 25px;
+    }
+
+    /*inicio y disco*/
+    .inicioyedicion {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+    }
+
+    .inicioyedicion .recuadro-crema-negro {
+        background: none;
+        max-width: 540px;
+        justify-content: center;
+    }
+
+    .inicioyedicion ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .disco {
+        width: 300px;
+        height: 300px;
+    }
+
+    .recuadro-crema-negro .logo-archivo img {
+        width: 350px;
+        background-color: #F3AB01;
+        padding: 0px 15px;
+        border: 5px solid #000;
+        box-shadow: 10px 13px 0px 0px #000;
+    }
+
+    .linea-punteada {
+        display: flex;
+        gap: 17px;
+        padding: 32px;
+    }
+
+    /*quienes somos*/
+    #quienes-somos .recuadro-crema-negro {
+        padding: 32px;
+    }
+
+    .contenedor-texto p {
+        max-width: fit-content;
+    }
+
+    /*preguntas frecuentes*/
+    .preguntas-frecuentes .recuadro-amarillo-negro {
+        padding: 32px;
+    }
+
+    .preguntasyrevistas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*nuestras revistas*/
+    #nuestras-revistas{
+        width: 540px;
+    }
+
+    #nuestras-revistas .recuadro-crema-negro {
+        padding: 32px;
+    }
+
+    /*club de la mesa*/
+    .clubychica {
+        gap: 0px;
+    }
+
+    #mesa-redonda .recuadro-crema-negro {
+        padding: 32px;
+        width: fit-content;
+        height: fit-content;
+        background-size: 35%;
+    }
+
+    .contenedor-texto {
+        gap: 17px;
+    }
+
+    /*********SUSCRIPCION*********/
+    .iconos-pago {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .logos {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    #se-parte {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .recuadro-crema-negro-susc {
+        max-width: 494px;
+    }
+
+    #descripcion-club {
+        max-width: 540px;
+        gap: 50px;
+    }
+
+    .contacto {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .compu img {
+        display: none;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .enviar {
+        max-width: 100%;
+    }
+
+    .suscribite p {
+        font-size: 1.5rem;
+        line-height: 32px;
+    }
 
 
-    /****************************************INDEX****************************************/
-
-
-
-    /****************************************SUSCRIPCION**********************************/
-
-
-
-    /****************************************REVISTAS**************************************/
+    /*********REVISTAS*********/
     /*tipografias*/
     .page-revistas h2 {
         font-size: 8rem
@@ -1335,11 +1600,13 @@ textarea {
         font-size: 2rem;
         line-height: 40px;
     }
-    .page-revistas p{
+
+    .page-revistas p {
         font-size: 1.5rem;
         line-height: 35px;
-        
-    } 
+
+    }
+
     /*general*/
     .page-revistas {
         margin-left: 20px;
@@ -1352,7 +1619,7 @@ textarea {
         width: 590px;
         padding: 20px 0px;
     }
-    
+
     #contenedor-titulos {
         width: 80%;
         display: flex;
@@ -1361,7 +1628,6 @@ textarea {
         flex-direction: column;
         justify-content: space-evenly;
     }
-
 
     .contenedor-efecto-cartel {
         display: flex;
@@ -1397,35 +1663,34 @@ textarea {
     }
 
 
-    /***************************************EVENTOS**************************************/
+    /*********EVENTOS*********/
     .page-eventos {
         background-color: #F3AB01;
         margin-left: 20px;
-        margin-right: 7.5rem;
     }
 
-    .contenedor-main {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
+    .img-clip-eventos{
+        display: none;
+    }
+
+    .contenedor-titulos-eventos {
+        padding-bottom: 20px;
     }
 
     .contenedor-h3 {
-        background-color: #000;
-        height: 47px;
-        display: flex;
-        padding: 6px;
+        height: 54px;
+        padding: 19px 18px;
+        background-color: black; 
     }
 
     .sub-eventos {
         color: #FFF1E3;
         font-family: Lato;
-        font-size: 15px;
+        font-size: 1.3em;
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
         text-transform: uppercase;
-        line-height: 20px;
+        line-height: 25px;
     }
 
     .img-clip-eventos {
@@ -1434,53 +1699,49 @@ textarea {
     }
 
     .contenedor-h2-eventos {
-        width: 59%;
+        width: 100%;
+        padding-bottom: 20px;
     }
 
-    h2 {
+    .h2-eventos {
         color: #000;
         font-family: "Bebas Neue";
-        font-size: 2rem;
+        font-size: 4em;
         font-style: normal;
         font-weight: 400;
         text-transform: uppercase;
         line-height: 1em;
     }
 
-    h3 {
+    .h3-eventos {
         color: #000;
         font-family: Lato;
-        font-size: 12px;
         font-style: normal;
+        font-size: 1.3em;
+        line-height: 25px;
         font-weight: 700;
-        line-height: normal;
         text-transform: uppercase;
-        line-height: 16px;
     }
 
     #ferias {
-        display: flex;
-        flex-direction: column;
+        padding-top: 1em;
     }
 
     .contenedor-main {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
+        gap: 15px
     }
 
     .recuadro-crema-negro-eventos {
         border: 3px solid #000;
         background: var(--Cremita, #FFF1E3);
-        box-shadow: 10px 13px 0px 0px #000;
-        padding: 15px
+        box-shadow: 5px 5px 0px 0px #000;
+        padding: 22px
     }
 
     #contenedores-ferias {
         display: flex;
         flex-direction: column;
-        gap: 31px;
-        width: 57%;
+        gap: 2em;
     }
 
     .titulo-feria {
@@ -1488,7 +1749,6 @@ textarea {
         box-shadow: 7px 8px 0px 0px #000;
         width: fit-content;
         padding: 8px;
-        width: 85%;
     }
 
     .foto-evento {
@@ -1501,13 +1761,9 @@ textarea {
         gap: 10px;
     }
 
-    p {
-        color: #000;
-        font-family: Lato;
-        font-size: 14px;
-        line-height: 18px;
-        font-style: normal;
-        font-weight: 400;
+    .page-eventos p{
+        font-size: 1.5rem;
+        line-height: 32px;
     }
 
     .sobre-feria {
@@ -1528,12 +1784,34 @@ textarea {
         text-transform: uppercase;
     }
 
+    .info-feria{
+        gap: 0px;
+    }
+
     .contenedor-info-feria {
         display: flex;
         padding-top: 25px;
-        gap: 10px;
+        gap: 27px;
         flex-wrap: wrap;
         flex-direction: column-reverse;
+    }
+
+    .foto-evento{
+        width: 300px;
+        height: 300px;
+    }
+
+    .h6-eventos{
+        font-size: 2rem;
+    }
+
+    .svg-insta-eventos{
+        width: 50px;
+        height: 50px;
+    }
+
+    .flecha-arriba{
+        display: none;
     }
 
 }

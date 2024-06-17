@@ -16,42 +16,63 @@
 </head>
 
 <body class="page-eventos">
+<!------nav-DESKTOP--------->
     <header>
-        <nav class="botonera">
-            <img class="logo-blanco" src="img/svg/logo-archivo909.svg" alt="logo-archivo909" width="173px" height="28px">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="suscripcion.html">Suscribite</a></li>
-                <li><a href="entretenimiento.html" class="active">Eventos</a></li>
-                <li><a href="revistas.html">Revistas</a></li>
+        <div class="logo-responsive">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+                <path d="M21.1667 17.1458C21.6322 17.1461 22.0797 17.3254 22.4166 17.6466C22.7535 17.9678 22.9538 18.4063 22.9762 18.8712C22.9986 19.3362 22.8412 19.7919 22.5367 20.144C22.2323 20.496 21.804 20.7175 21.3407 20.7624L21.1667 20.7708H1.83337C1.3679 20.7706 0.920364 20.5913 0.58349 20.2701C0.246617 19.9489 0.0462345 19.5104 0.0238655 19.0454C0.00149659 18.5805 0.158856 18.1248 0.463336 17.7727C0.767816 17.4206 1.19608 17.1992 1.65937 17.1543L1.83337 17.1458H21.1667ZM21.1667 8.6875C21.6474 8.6875 22.1084 8.87846 22.4483 9.21837C22.7882 9.55828 22.9792 10.0193 22.9792 10.5C22.9792 10.9807 22.7882 11.4417 22.4483 11.7816C22.1084 12.1215 21.6474 12.3125 21.1667 12.3125H1.83337C1.35267 12.3125 0.891653 12.1215 0.551743 11.7816C0.211833 11.4417 0.020874 10.9807 0.020874 10.5C0.020874 10.0193 0.211833 9.55828 0.551743 9.21837C0.891653 8.87846 1.35267 8.6875 1.83337 8.6875H21.1667ZM21.1667 0.229172C21.6474 0.229172 22.1084 0.420131 22.4483 0.760041C22.7882 1.09995 22.9792 1.56097 22.9792 2.04167C22.9792 2.52238 22.7882 2.98339 22.4483 3.3233C22.1084 3.66321 21.6474 3.85417 21.1667 3.85417H1.83337C1.35267 3.85417 0.891653 3.66321 0.551743 3.3233C0.211833 2.98339 0.020874 2.52238 0.020874 2.04167C0.020874 1.56097 0.211833 1.09995 0.551743 0.760041C0.891653 0.420131 1.35267 0.229172 1.83337 0.229172H21.1667Z" fill="black"/>
+              </svg>
+        </div>
+        <div class="ocultar-en-responsive">
+            <nav class="botonera">
+                <img class="logo-blanco" src="img/svg/logo-archivo909.svg" alt="logo-archivo909" width="173px" height="28px">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="suscripcion.html">Suscribite</a></li>
+                    <li><a href="entretenimiento.html" class="active">Eventos</a></li>
+                    <li><a href="revistas.html">Revistas</a></li>
+                </ul>
+            </nav>
+        </div>
+<!------nav-CELULAR------>
+        <div class="nav-mobile">
+            <label for="check" class="check2">
+                <img class="menu-hamburguesa-svg" src="img/svg/menu-hamburguesa.svg" width="50px" height="50px" alt="menu-hamburguesa">
+            </label>
+            <input type="checkbox" id="check">
+
+            <ul class="desplegable">
+                <li ><a href="index.html" class="active">Inicio</a></li>
+                <li ><a href="suscripcion.html">Suscribite</a></li>
+                <li ><a href="entretenimiento.html">Eventos</a></li>
+                <li ><a href="revistas.html">Revistas</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
 
     <main>
         <section id="ferias">
             <img class="img-clip-eventos" src="img/eventos/clip-eventos.png" width="452px" height="746px" alt="clip-eventos">
-            <section class="contenedor-main">
+            <section class="contenedor-titulos-eventos">
                 <article class="contenedor-h2-eventos">
-                    <h2>próximos eventos</h2>
+                    <h2 class="h2-eventos">próximos eventos</h2>
                     <article class="contenedor-h3">
                         <h3 class="sub-eventos">✢ no te pierdas las novedades de todas las semanas ✢</h3>
                     </article>
                 </article>
-
-<!--paquete1-->
-                <article id="contenedores-ferias">
+                <!--paquete1-->
+        <article id="contenedores-ferias">
                     <div class="recuadro-crema-negro-eventos">
                         <div class="titulo-feria">
-                            <h3>Salida fotográfica grupal ✢ 4 de Mayo 2014 </h3>
+                            <h3 class="h3-eventos">Salida fotográfica grupal ✢ 4 de Mayo 2014 </h3>
                         </div>
                         <div class="contenedor-info-feria">
                             <div class="foto-insta">
                                 <img class="foto-evento" src="img/eventos/eventos-travelfotografia.jpg" width="162px" height="162px" alt="feria1">
                                 <div class="insta-feria">
-                                    <a href="https://www.instagram.com/travelfotografia/?hl=es"><img src="img/svg/insta-eventos.svg" width="24px" height="24px" alt="vector-insta" /></a>
-                                    <h6>@travelfotografia</h6>
+                                    <a href="https://www.instagram.com/travelfotografia/?hl=es"><img class="svg-insta-eventos" src="img/svg/insta-eventos.svg" width="24px" height="24px" alt="vector-insta" /></a>
+                                    <h6 class="h6-eventos">@travelfotografia</h6>
                                 </div>
                             </div>
                             
@@ -68,7 +89,7 @@
                                     </div>
                                 </div>
                             </div>
-                        <p class="descripcion-actividad">
+                        <p class="p-eventos">
                             Aprendé a sacar fotografías urbanas de manera didáctica y divertida mientras recorremos los
                             rincones más lindos del barrio de Retiro con esos hermosos palacios de la aristocracia del
                             siglo pasado a recorrer su arquitectura, historia y hacer lo que más nos gusta: Fotos.
@@ -76,162 +97,175 @@
                             </div>
                         </div>
                     </div>
-<!--paquete1-->
+<!--fin paquete1-------------->
+
+
 
 <!--paquete2------------>
-                    <div class="recuadro-crema-negro-eventos">
-                        <div class="titulo-feria">
-                            <h3>feria kokoro ✢ 14 de Mayo 2014 </h3>
+                <div class="recuadro-crema-negro-eventos">
+                    <div class="titulo-feria">
+                        <h3 class="h3-eventos">feria kokoro ✢ 8 de Mayo 2014 </h3>
+                    </div>
+                    <div class="contenedor-info-feria">
+                        <div class="foto-insta">
+                            <img class="foto-evento" src="img/eventos/evento-kokoro.jpg" width="162px" height="162px" alt="feria1">
+                            <div class="insta-feria">
+                                <a href="https://www.instagram.com/travelfotografia/?hl=es"><img class="svg-insta-eventos" src="img/svg/insta-eventos.svg" width="24px" height="24px" alt="vector-insta" /></a>
+                                <h6 class="h6-eventos">@feriakokoro</h6>
+                            </div>
                         </div>
-                        <div class="contenedor-info-feria">
-                            <div class="foto-insta">
-                                <img class="foto-evento" src="img/eventos/evento-kokoro.jpg" width="162px" height="162px" alt="feria1">
-                                <div class="insta-feria">
-                                    <img src="img/svg/insta-eventos.svg" width="24px" height="24px" alt="vector-insta" />
-                                    <h6>@feriakokoro</h6>
+                        
+                        <div class="paquetes-chicos">
+                            <div class="sobre-feria">
+                                <div class="info-feria">
+                                    <p class="subs-info">ubicación</p>
+                                    <p>Caballito</p>
+                            </div>
+                            <div class="sobre-feria">
+                                <div class="info-feria">
+                                    <p class="subs-info">Horario</p>
+                                    <p>13hs a 18hs</p>
                                 </div>
                             </div>
-                            
-                            <div class="paquetes-chicos">
-                                <div class="sobre-feria">
-                                    <div class="info-feria">
-                                        <p class="subs-info">ubicación</p>
-                                        <p>Caballito</p>
-                                </div>
-                                <div class="sobre-feria">
-                                    <div class="info-feria">
-                                        <p class="subs-info">Horario</p>
-                                        <p>15hs a 19hs</p>
-                                    </div>
-                                </div>
-                            </div>
-                        <p class="descripcion-actividad">
-                            ¡Hermosa Comunidad Amante del Arte!  Podrás explorar y apoyar el increíble trabajo de artistas. Sé de los primeros en llegar y podrás participar de la búsqueda de sellos de 54 artistas que encontrarás en el evento.
-                        </p>
-                            </div>
+                        </div>
+                    <p class="p-eventos">
+                        ¡Hermosa Comunidad Amante del Arte!  Podrás explorar y apoyar el increíble trabajo de artistas.
+                        Sé de los primeros en llegar y podrás participar de la búsqueda de sellos de 54 artistas que encontrarás en el evento.
+                    </p>
                         </div>
                     </div>
-<!--paquete2------------>
+                </div>
+<!--fin paquete2------------>
+
+
+
 
 <!--paquete3------------>
-                    <div class="recuadro-crema-negro-eventos">
-                        <div class="titulo-feria">
-                            <h3>feria sudaka ✢ 17 de Mayo 2014 </h3>
+                <div class="recuadro-crema-negro-eventos">
+                    <div class="titulo-feria">
+                        <h3 class="h3-eventos">feria sudaka ✢ 16 de Mayo 2014 </h3>
+                    </div>
+                    <div class="contenedor-info-feria">
+                        <div class="foto-insta">
+                            <img class="foto-evento" src="img/eventos/eventos-sudaka.jpg" width="162px" height="162px" alt="feria1">
+                            <div class="insta-feria">
+                                <a href="https://www.instagram.com/travelfotografia/?hl=es"><img class="svg-insta-eventos" src="img/svg/insta-eventos.svg" width="24px" height="24px" alt="vector-insta" /></a>
+                                <h6 class="h6-eventos">@feriasudakalomas</h6>
+                            </div>
                         </div>
-                        <div class="contenedor-info-feria">
-                            <div class="foto-insta">
-                                <img class="foto-evento" src="img/eventos/eventos-sudaka.jpg" width="162px" height="162px" alt="feria1">
-                                <div class="insta-feria">
-                                    <img src="img/svg/insta-eventos.svg" width="24px" height="24px" alt="vector-insta" />
-                                    <h6>@feriasudakalomas</h6>
+                        
+                        <div class="paquetes-chicos">
+                            <div class="sobre-feria">
+                                <div class="info-feria">
+                                    <p class="subs-info">ubicación</p>
+                                    <p>Lomas de zamora</p>
+                            </div>
+                            <div class="sobre-feria">
+                                <div class="info-feria">
+                                    <p class="subs-info">Horario</p>
+                                    <p>14hs a 20hs</p>
                                 </div>
                             </div>
-                            
-                            <div class="paquetes-chicos">
-                                <div class="sobre-feria">
-                                    <div class="info-feria">
-                                        <p class="subs-info">ubicación</p>
-                                        <p>Lomas</p>
-                                </div>
-                                <div class="sobre-feria">
-                                    <div class="info-feria">
-                                        <p class="subs-info">Horario</p>
-                                        <p>13hs a 20hs</p>
-                                    </div>
-                                </div>
-                            </div>
-                        <p class="descripcion-actividad">
-                            Mercado de moda circular, diseño y arte. Más de 50 emprendimientos autogestivos del barrio de Lomas de Zamora, diseño local e independiente, accesorios y arte. Es la última del mes!! No te la pierdas!! A buscar esos tesoros, bonitos y baratos.
-                        </p>
-                            </div>
+                        </div>
+                    <p class="p-eventos">
+                        Mercado de moda circular, diseño y arte.Más de 50 emprendimientos autogestivo sdel barrio, diseño local e independiente, accesorios y arte.Es la última del mes!! No te la pierdas!! A buscar esos tesoros, bonitos y baratos.
+                    </p>
                         </div>
                     </div>
-<!--paquete3------------>
+                </div>
+<!--fin paquete3------------>
+
+
 
 
 <!--paquete4------------>
-                    <div class="recuadro-crema-negro-eventos">
-                        <div class="titulo-feria">
-                            <h3>jam de modelo vivo temática ✢ 20 de Mayo 2014 </h3>
+                <div class="recuadro-crema-negro-eventos">
+                    <div class="titulo-feria">
+                        <h3 class="h3-eventos">jam de modelo vivo temática ✢ 20 de Mayo 2014 </h3>
+                    </div>
+                    <div class="contenedor-info-feria">
+                        <div class="foto-insta">
+                            <img class="foto-evento" src="img/eventos/evento-elzorzal.jpg" width="162px" height="162px" alt="feria1">
+                            <div class="insta-feria">
+                                <a href="https://www.instagram.com/travelfotografia/?hl=es"><img class="svg-insta-eventos" src="img/svg/insta-eventos.svg" width="24px" height="24px" alt="vector-insta" /></a>
+                                <h6 class="h6-eventos">@elzorzalestudio</h6>
+                            </div>
                         </div>
-                        <div class="contenedor-info-feria">
-                            <div class="foto-insta">
-                                <img class="foto-evento" src="img/eventos/evento-elzorzal.jpg" width="162px" height="162px" alt="feria1">
-                                <div class="insta-feria">
-                                    <img src="img/svg/insta-eventos.svg" width="24px" height="24px" alt="vector-insta" />
-                                    <h6>@elzorzalestudio</h6>
+                        
+                        <div class="paquetes-chicos">
+                            <div class="sobre-feria">
+                                <div class="info-feria">
+                                    <p class="subs-info">ubicación</p>
+                                    <p>Colegiales</p>
+                            </div>
+                            <div class="sobre-feria">
+                                <div class="info-feria">
+                                    <p class="subs-info">Horario</p>
+                                    <p>18hs a 23hs</p>
                                 </div>
                             </div>
-                            
-                            <div class="paquetes-chicos">
-                                <div class="sobre-feria">
-                                    <div class="info-feria">
-                                        <p class="subs-info">ubicación</p>
-                                        <p>Colegiales</p>
-                                </div>
-                                <div class="sobre-feria">
-                                    <div class="info-feria">
-                                        <p class="subs-info">Horario</p>
-                                        <p>21hs a 23:30hs</p>
-                                    </div>
-                                </div>
-                            </div>
-                        <p class="descripcion-actividad">
-                            Veni a dibujar y pasar una noche hermosa en el taller de zorzal con un JAM de modelo vivo con la temática "Mounstruos y máscaras. Musica en vivo, performance, barra de comida y bebida.CUPOS LIMITADISIMOS, reserva tu entrada.
-                        </p>
-                            </div>
+                        </div>
+                    <p class="p-eventos">
+                        Veni a dibujar y pasar una noche hermosa en el taller de zorzal con un JAM de modelo vivo con la temática "Mounstruos y máscaras.
+Musica en vivo, performance, barra de comida y bebida.CUPOS LIMITADISIMOS, reserva tu entrada.
+                    </p>
                         </div>
                     </div>
-<!--paquete4------------>
+                </div>
+<!--fin paquete4------------>
 
 
 <!--paquete5------------>
-                    <div class="recuadro-crema-negro-eventos">
-                        <div class="titulo-feria">
-                            <h3>festival kill the networld vol. 5 ✢ 25 de Mayo 2014 </h3>
+                <div class="recuadro-crema-negro-eventos">
+                    <div class="titulo-feria">
+                        <h3 class="h3-eventos">FESTIVAL KILL THE NETWORLD ✢ 24 de Mayo 2014 </h3>
+                    </div>
+                    <div class="contenedor-info-feria">
+                        <div class="foto-insta">
+                            <img class="foto-evento" src="img/eventos/eventos-wratdy.jpg" width="162px" height="162px" alt="feria1">
+                            <div class="insta-feria">
+                                <a href="https://www.instagram.com/travelfotografia/?hl=es"><img class="svg-insta-eventos" src="img/svg/insta-eventos.svg" width="24px" height="24px" alt="vector-insta" /></a>
+                                <h6 class="h6-eventos">@wratdy</h6>
+                            </div>
                         </div>
-                        <div class="contenedor-info-feria">
-                            <div class="foto-insta">
-                                <img class="foto-evento" src="img/eventos/eventos-wratdy.jpg" width="162px" height="162px" alt="feria1">
-                                <div class="insta-feria">
-                                    <img src="img/svg/insta-eventos.svg" width="24px" height="24px" alt="vector-insta" />
-                                    <h6>@wratdy</h6>
+                        
+                        <div class="paquetes-chicos">
+                            <div class="sobre-feria">
+                                <div class="info-feria">
+                                    <p class="subs-info">ubicación</p>
+                                    <p>Villa Ortúzar</p>
+                            </div>
+                            <div class="sobre-feria">
+                                <div class="info-feria">
+                                    <p class="subs-info">Horario</p>
+                                    <p>20hs</p>
                                 </div>
                             </div>
-                            
-                            <div class="paquetes-chicos">
-                                <div class="sobre-feria">
-                                    <div class="info-feria">
-                                        <p class="subs-info">ubicación</p>
-                                        <p>Villa Ortuza, CABA.</p>
-                                </div>
-                                <div class="sobre-feria">
-                                    <div class="info-feria">
-                                        <p class="subs-info">Horario</p>
-                                        <p>20hs</p>
-                                    </div>
-                                </div>
-                            </div>
-                        <p class="descripcion-actividad">
-                            Festival donde el primer protagonista es el arte. Te invitamos a salirte de la pantalla para vivir todo lo que esta pasando, con los artistas más interesantes del movimiento artístico emergente de buenos aires.
-                        </p>
-                            </div>
+                        </div>
+                    <p class="p-eventos">
+                        Festival donde el primer protagonista es el arte. Te invitamos a salirte de la pantalla para vivir todo lo que esta pasando, con los artistas más interesantes del movimiento artístico emergente de buenos aires.
+                    </p>
                         </div>
                     </div>
-<!--paquete5------------>
-                </article>
+                </div>
+<!--fin paquete5------------>
+        </article>
             </section>
         </section>
-        <div class="flecha-arriba">
-            <a href="#top" class="flechas-blancas"><img src="img/svg/flecha-arriba.svg" alt="Volver arriba" width="21px" height="32px"></a><!--flecha de volver arriba-->
-        </div>
+
+
+
     </main>
 
     <footer>
         <div class="contenedor-footer">
             <img src="img/svg/logo-archivo909.svg" alt="imagen del logo" width="181px" height="30px">
-            <p>Copyright© 2024. Todos los derechos reservados.</p>
-            <a>CONTACTO</a>
+            <p class="ocultar-en-responsive">Copyright© 2024. Todos los derechos reservados.</p>
+            <div id="iconos-contacto">
+                <a href="mailto:jjuli.martinez13@gmail.com"><img src="img/svg/gmail.svg" width="50px" height="50px" alt="gmail"/></a>
+                <a href="https://open.spotify.com/playlist/79h9jJSvbOd8Lm58S0jEX6?si=Z4iLPbDQTlqJsf5AECOsCg&nd=1&dlsi=792862c6f7f848a7" target="_blank"><img src="img/svg/spotify.svg" width="50px" height="50px" alt="spotify"/></a>
+                <a href="https://www.instagram.com/archivo909/" target="_blank"><img src="img/svg/instagram.svg" width="50px" height="50px" alt="instagram"/></a>
+            </div>
         </div>
     </footer>
 </body>
