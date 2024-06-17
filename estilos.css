@@ -76,7 +76,6 @@ p {
     font-weight: 400;
 }
 
-
 /*nav*/
 .nav-mobile {
     display: none;
@@ -127,14 +126,12 @@ header {
     border-radius: 0.6rem 0.6rem 0rem 0rem;
 }
 
-
 .botonera ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     gap: 3em;
 }
-
 
 .botonera ul li {
     stroke-width: 3px;
@@ -150,12 +147,7 @@ header {
     border-radius: 10px 10px 0px 0px;
 }
 
-
 /*footer*/
-#iconos-contacto {
-    display: none;
-}
-
 footer {
     padding: 60px 0px;
 }
@@ -169,13 +161,23 @@ footer a {
     border: #000 3px solid;
     background: #FFF;
     width: 100%;
-    padding: 1.25rem 0rem;
+    padding: 13px 0px;
     align-items: center;
     justify-content: space-around;
     font-family: "Bebas Neue";
     font-size: 2rem;
 }
 
+#iconos-contacto {
+    display: flex;
+    gap: 20px;
+}
+
+#iconos-contacto img {
+    background-color: #F3AB01;
+    padding: 7px;
+    border-radius: 10px;
+}
 
 /***********fondos***********/
 body {
@@ -184,12 +186,10 @@ body {
     margin-right: 7.5rem;
 }
 
-
 .page-eventos,
 .page-club1 {
     background-color: #F3AB01;
 }
-
 
 /***********class***********/
 button {
@@ -204,7 +204,6 @@ button {
     padding: 2rem;
 }
 
-
 .amarrilo-contenedornegro {
     display: flex;
     width: auto;
@@ -215,7 +214,6 @@ button {
     background: #000;
     padding: 1.25rem;
 }
-
 
 .flechas {
     background: #F3AB01;
@@ -421,11 +419,10 @@ a #flecha-volver {
     max-width: 70%;
 }
 
-.contenedor-texto {
+#quienes-somos .contenedor-texto {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    max-width: 500px;
 }
 
 /*PREGUNTAS FRECUENTES*/
@@ -520,34 +517,19 @@ a #flecha-volver {
     width: 930px;
 }
 
+#mesa-redonda .contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 440px;
+}
+
 .index .recuadro-crema-negro {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     padding: 50px;
-}
-
-/*contacto-pop-up*/
-#ventana-contacto img {
-    background-color: #F3AB01;
-    padding: 20px 25px;
-    border-radius: 30px;
-}
-
-#ventana-contacto {
-    display: flex;
-    gap: 35px;
-    padding: 50px;
-    max-width: fit-content;
-    background: #000;
-    box-shadow: 13px 13px 0px 0px #F3AB01;
-    position: absolute;
-    opacity: 0;
-}
-
-#ventana-contacto:active {
-    opacity: 1;
 }
 
 /***********SUSCRIPCION************/
@@ -1543,12 +1525,15 @@ body {
     }
 
     /*club de la mesa*/
+    .clubychica {
+        gap: 0px;
+    }
+
     #mesa-redonda .recuadro-crema-negro {
         padding: 32px;
         width: fit-content;
         height: fit-content;
         background-size: 35%;
-        gap: 17px;
     }
 
     .contenedor-texto {
